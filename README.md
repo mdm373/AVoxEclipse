@@ -26,7 +26,7 @@ Everything else is more or less imported from the asset store or another custom 
 
 ## Can you just show me the fancy leap motion handy wavy code?
 
-From Unity, open up the scene “VoxPuzDemo”. From here take a look at the “puzzle-controls” game object. This is the root of all of the game's heavy lifting. Here is a bief rundown on each of those controllers. Ones particualarly Leap Motion “centric” have been hilighted.
+From Unity, open up the scene “VoxPuzDemo”. From here take a look at the “puzzle-controls” game object. This is the root of all of the game's heavy lifting. Here is a brief rundown on each of those controllers. Ones particularly Leap Motion “centric” have been highlighted.
 * **hint-controller:** That nifty hint box at the top of the screen
 * **tool-controller:**  Logic around the currently selected user “tool” (Pencil, Brush, etc…)
 * **menu-system:** the root of menu structure. Open up the “menu-controller” prefab for even more info
