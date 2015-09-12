@@ -1,0 +1,1551 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &101636
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 494578}
+  - 82: {fileID: 8243756}
+  m_Layer: 0
+  m_Name: bgm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &112870
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 22458582}
+  - 222: {fileID: 22221442}
+  - 114: {fileID: 11490796}
+  m_Layer: 12
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &115358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 466202}
+  - 114: {fileID: 11492096}
+  m_Layer: 0
+  m_Name: audio-controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &123044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 417450}
+  - 114: {fileID: 11483568}
+  m_Layer: 0
+  m_Name: camera-controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &128634
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 22489260}
+  - 222: {fileID: 22232512}
+  - 114: {fileID: 11444040}
+  m_Layer: 12
+  m_Name: error-text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &132606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 463252}
+  - 114: {fileID: 11494596}
+  m_Layer: 0
+  m_Name: versioning
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &134062
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 22459908}
+  - 223: {fileID: 22305658}
+  - 114: {fileID: 11467600}
+  - 114: {fileID: 11460506}
+  m_Layer: 12
+  m_Name: canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &144074
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 22425268}
+  - 222: {fileID: 22206326}
+  - 114: {fileID: 11483136}
+  m_Layer: 12
+  m_Name: action-text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &145668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 441200}
+  - 114: {fileID: 11482848}
+  m_Layer: 0
+  m_Name: globals
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &147054
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 451498}
+  - 114: {fileID: 11440188}
+  m_Layer: 12
+  m_Name: dc-notice
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &160990
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 22436266}
+  - 222: {fileID: 22286350}
+  - 114: {fileID: 11477632}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &166560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 421104}
+  - 114: {fileID: 11401696}
+  m_Layer: 0
+  m_Name: font-controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &166778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 403928}
+  - 114: {fileID: 11469932}
+  m_Layer: 12
+  m_Name: diconnect-hud-item
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &171146
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 471610}
+  - 114: {fileID: 11420214}
+  m_Layer: 0
+  m_Name: button-ui-controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &179434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 405570}
+  - 114: {fileID: 11465506}
+  m_Layer: 0
+  m_Name: button-controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &182010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 498096}
+  - 114: {fileID: 11466168}
+  m_Layer: 0
+  m_Name: scene-navigation-controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 475182}
+  - 114: {fileID: 11492980}
+  m_Layer: 0
+  m_Name: global-persist
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &199520
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 497968}
+  - 114: {fileID: 11450352}
+  m_Layer: 0
+  m_Name: context-loader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &403928
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166778}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -.0899999961, z: .25}
+  m_LocalScale: {x: .00999999978, y: .00999999978, z: .00999999978}
+  m_Children:
+  - {fileID: 451498}
+  - {fileID: 22459908}
+  m_Father: {fileID: 441200}
+  m_RootOrder: 7
+--- !u!4 &405570
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179434}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .00544860959, y: -9.00628281, z: 25.986866}
+  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_Children: []
+  m_Father: {fileID: 441200}
+  m_RootOrder: 2
+--- !u!4 &417450
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 123044}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 441200}
+  m_RootOrder: 5
+--- !u!4 &421104
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166560}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 441200}
+  m_RootOrder: 1
+--- !u!4 &441200
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145668}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.37300014, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 463252}
+  - {fileID: 421104}
+  - {fileID: 405570}
+  - {fileID: 471610}
+  - {fileID: 497968}
+  - {fileID: 417450}
+  - {fileID: 498096}
+  - {fileID: 403928}
+  - {fileID: 466202}
+  - {fileID: 475182}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &451498
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 403928}
+  m_RootOrder: 0
+--- !u!4 &463252
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132606}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 441200}
+  m_RootOrder: 0
+--- !u!4 &466202
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.44860959e-05, y: -.0900628269, z: .259868652}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 494578}
+  m_Father: {fileID: 441200}
+  m_RootOrder: 8
+--- !u!4 &471610
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 171146}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 441200}
+  m_RootOrder: 3
+--- !u!4 &475182
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193504}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 441200}
+  m_RootOrder: 9
+--- !u!4 &494578
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101636}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 466202}
+  m_RootOrder: 0
+--- !u!4 &497968
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 199520}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 441200}
+  m_RootOrder: 4
+--- !u!4 &498096
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 441200}
+  m_RootOrder: 6
+--- !u!82 &8243756
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101636}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300001, guid: 61fd9564d685bd047b7d67690ec7a17d,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: f745de6b422ea654eaa3a60f21647ec0, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!114 &11401696
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1577775083, guid: 7d7c522833e760848971ae699b3e961f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  config:
+  - font: {fileID: 12800000, guid: 7db9cacfc987dfa48bc4c64cc263fd68, type: 3}
+    type: 0
+--- !u!114 &11420214
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 171146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2025457586, guid: 7d7c522833e760848971ae699b3e961f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iconPrefabs:
+  - {fileID: 11484088, guid: 014551e0226575d44bd93f22758046f9, type: 2}
+  - {fileID: 11450650, guid: f6eb14ef2ef6d04479ab86d6c812ef5e, type: 2}
+  - {fileID: 11471774, guid: 288665360920cf346ab2603e8dad61bf, type: 2}
+  - {fileID: 11422950, guid: 757a039cf8c0ec34da54f26cad4d7c77, type: 2}
+  - {fileID: 11499044, guid: 4e182e65b5eb6754ab1710a14e3d790b, type: 2}
+  - {fileID: 11443550, guid: d1a128f374da08443b5e4f3a46cc305f, type: 2}
+  - {fileID: 11468240, guid: 502e16b693f276241b3184dc6362aa92, type: 2}
+  - {fileID: 11456530, guid: 0ded92020a0c00d448c9054587e47ea6, type: 2}
+  - {fileID: 11410022, guid: d0b09a50db6df604881fd07d79e35b8c, type: 2}
+  - {fileID: 11453848, guid: d3ff2365583017e4988630751848fdad, type: 2}
+  - {fileID: 11413412, guid: 0e3bf220b587ce44baabf134406846d9, type: 2}
+  - {fileID: 11412830, guid: fa7d1a81167d24145a0fa256dedd0a52, type: 2}
+  - {fileID: 11430702, guid: d7c4ec97add2d03428e6a2db871e0487, type: 2}
+  - {fileID: 11447294, guid: dfd78548d5cb8634db88de9e1d39a51d, type: 2}
+  - {fileID: 11440350, guid: c214c615695835d4ca5c4f0c0b7b567b, type: 2}
+  - {fileID: 11465314, guid: 1558b826c12f1d84abe377ef3732657c, type: 2}
+  - {fileID: 11473400, guid: 0b34f836c6beb9b4aa79ad1c97d3d638, type: 2}
+  - {fileID: 11450272, guid: 237f78e5e5c6ddc41a5f55e1b2b5aeaf, type: 2}
+  configs:
+  - name: MouseButton-Left
+    descriptiveText: left mouse button
+    type: 0
+    displayText: LMB
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: MouseButton-Right
+    descriptiveText: right mouse button
+    type: 2
+    displayText: RMB
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: MouseButton-ScrollWheelClick
+    descriptiveText: mouse scroll wheel
+    type: 1
+    displayText: SCR
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Mouse ScrollWheel
+    descriptiveText: mouse scroll wheel
+    type: 1
+    displayText: SCR
+    isAxis: 1
+    isPositiveOnly: 0
+  - name: Xbox-RightStickVertical
+    descriptiveText: right stick
+    type: 12
+    displayText: RS
+    isAxis: 1
+    isPositiveOnly: 0
+  - name: Xbox-A
+    descriptiveText: '''A'' button'
+    type: 3
+    displayText: A
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Xbox-RightBumper
+    descriptiveText: right bumper
+    type: 9
+    displayText: RB
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Xbox-Triggers
+    descriptiveText: right trigger
+    type: 11
+    displayText: RT
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Xbox-Triggers
+    descriptiveText: left trigger
+    type: 10
+    displayText: LT
+    isAxis: 0
+    isPositiveOnly: 1
+  - name: Xbox-LeftStickVertical
+    descriptiveText: left stick
+    type: 12
+    displayText: LS
+    isAxis: 1
+    isPositiveOnly: 0
+  - name: Xbox-LeftBumper
+    descriptiveText: left bumper
+    type: 8
+    displayText: LB
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Xbox-LeftStickClick
+    descriptiveText: left stick
+    type: 12
+    displayText: LS
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Keyboard-UpDownArrows
+    descriptiveText: up and down arrows
+    type: 15
+    displayText: Up/Down
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Keyboard-RightArrow
+    descriptiveText: right arrow
+    type: 14
+    displayText: Right
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Keyboard-RightCtrl
+    descriptiveText: right control key
+    type: 15
+    displayText: Right Ctrl
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Keyboard-WS
+    descriptiveText: '''W'' and ''S'' keys'
+    type: 15
+    displayText: W / S
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Keyboard-Q
+    descriptiveText: '''Q'' key'
+    type: 14
+    displayText: Q
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Keyboard-E
+    descriptiveText: '''E'' key'
+    type: 14
+    displayText: E
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Keyboard-A
+    descriptiveText: '''A'' key'
+    type: 14
+    displayText: A
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Keyboard-Esc
+    descriptiveText: escape key
+    type: 15
+    displayText: esc
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Xbox-Start
+    descriptiveText: start button
+    type: 13
+    displayText: 
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Keyboard-LeftArrow
+    descriptiveText: left arrow
+    type: 17
+    displayText: Left
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Keyboard-F10
+    descriptiveText: '''F10'' key'
+    type: 14
+    displayText: F10
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Keyboard-D
+    descriptiveText: '''D'' key'
+    type: 14
+    displayText: D
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Keyboard-Space
+    descriptiveText: spacebar
+    type: 15
+    displayText: Space
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Keyboard-LeftAlt
+    descriptiveText: left alt key
+    type: 15
+    displayText: Left Alt
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Keyboard-LeftCtrl
+    descriptiveText: left control key
+    type: 15
+    displayText: Left Ctrl
+    isAxis: 0
+    isPositiveOnly: 0
+  - name: Keyboard-ZX
+    descriptiveText: '''Z'' and ''X'' keys'
+    type: 15
+    displayText: Z / X
+    isAxis: 0
+    isPositiveOnly: 0
+  groupingConfigs:
+  - grouping: 0
+    displayName: Right Hand On Mouse
+  - grouping: 1
+    displayName: Left Hand On Mouse
+  - grouping: 2
+    displayName: Lower Right Keyboard
+  - grouping: 3
+    displayName: Top Left Keyboard
+  - grouping: 4
+    displayName: Left Side Of Controller
+  - grouping: 6
+    displayName: Lower Left Keyboard
+  - grouping: 5
+    displayName: Right Side Of Controller
+--- !u!114 &11440188
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 228d149b4df3342518ccdb1142cee81b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeInTime: 1
+  fadeOutTime: 1
+  fade:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  waitFrames: 10
+  embeddedReplacementImage: {fileID: 0}
+  onColor: {r: 1, g: 1, b: 1, a: 1}
+  images:
+  - {fileID: 11490796}
+  - {fileID: 11477632}
+  texts:
+  - {fileID: 11444040}
+  - {fileID: 11483136}
+--- !u!114 &11444040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ef004e9a25130da4b8c966f5e13ecc40, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Yikes, I can''t find the Leap Motion Controller
+
+    ...Plug it back in?'
+--- !u!114 &11450352
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 199520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1745909952, guid: 7d7c522833e760848971ae699b3e961f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toLoad: {fileID: 178050, guid: 9d054642baa2cfe4aab787d815d48ca6, type: 2}
+  isLoadedOnEnable: 1
+--- !u!114 &11460506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &11465506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 865592016, guid: 7d7c522833e760848971ae699b3e961f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  config:
+    defaultGrouping: 3
+    groupings:
+    - name: Mouse In Right Hand
+      isGamePadIncluded: 0
+      handedness: 0
+      groupingType: 0
+      entries:
+      - name: Left Mouse Button
+        button: 0
+        unityInputName: MouseButton-Left
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      - name: Right Mouse Button
+        button: 1
+        unityInputName: MouseButton-Right
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 0
+        isAxisInverted: 0
+      - name: Mouse Scroll-Wheel
+        button: 2
+        unityInputName: Mouse ScrollWheel
+        isAxis: 1
+        isUnityInputAxis: 1
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 0
+        isAxisInverted: 1
+      - name: Mouse Scroll-Wheel Click
+        button: 3
+        unityInputName: MouseButton-ScrollWheelClick
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 0
+        isAxisInverted: 0
+      - name: Escape Key
+        button: 4
+        unityInputName: Keyboard-Esc
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      - name: Reset Focus
+        button: 5
+        unityInputName: Keyboard-F10
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      orderIndex: 0
+    - name: Controller In Right Hand
+      isGamePadIncluded: 1
+      handedness: 0
+      groupingType: 5
+      entries:
+      - name: Right Stick Up/Down
+        button: 2
+        unityInputName: Xbox-RightStickVertical
+        isAxis: 1
+        isUnityInputAxis: 1
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 0
+        isAxisInverted: 0
+      - name: A Button
+        button: 1
+        unityInputName: Xbox-A
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 0
+        isAxisInverted: 0
+      - name: Right Bumper
+        button: 3
+        unityInputName: Xbox-RightBumper
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 0
+        isAxisInverted: 0
+      - name: Right Trigger
+        button: 0
+        unityInputName: Xbox-Triggers
+        isAxis: 0
+        isUnityInputAxis: 1
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      - name: Start button
+        button: 4
+        unityInputName: Xbox-Start
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      - name: Reset Focus
+        button: 5
+        unityInputName: Keyboard-F10
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      orderIndex: 10
+    - name: Controller In Left Hand
+      isGamePadIncluded: 1
+      handedness: 1
+      groupingType: 4
+      entries:
+      - name: Left Stick Up / Down
+        button: 2
+        unityInputName: Xbox-LeftStickVertical
+        isAxis: 1
+        isUnityInputAxis: 1
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 0
+        isAxisInverted: 0
+      - name: Left Stick Click
+        button: 1
+        unityInputName: Xbox-LeftStickClick
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 0
+        isAxisInverted: 0
+      - name: Left Bumper
+        button: 3
+        unityInputName: Xbox-LeftBumper
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 0
+        isAxisInverted: 0
+      - name: Left Trigger
+        button: 0
+        unityInputName: Xbox-Triggers
+        isAxis: 0
+        isUnityInputAxis: 1
+        isForPositiveUnityAxis: 1
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      - name: Start Button
+        button: 4
+        unityInputName: Xbox-Start
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      - name: Reset Focus
+        button: 5
+        unityInputName: Keyboard-F10
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      orderIndex: 10
+    - name: Right Hand On Keyboard
+      isGamePadIncluded: 0
+      handedness: 0
+      groupingType: 2
+      entries:
+      - name: Up / Down Arrows
+        button: 2
+        unityInputName: Keyboard-UpDownArrows
+        isAxis: 1
+        isUnityInputAxis: 1
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 0
+        isAxisInverted: 0
+      - name: Right Control Key
+        button: 1
+        unityInputName: Keyboard-RightCtrl
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 0
+        isAxisInverted: 0
+      - name: Right Arrow
+        button: 3
+        unityInputName: Keyboard-RightArrow
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 0
+        isAxisInverted: 0
+      - name: Left Arrow
+        button: 0
+        unityInputName: Keyboard-LeftArrow
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      - name: Escape Key
+        button: 4
+        unityInputName: Keyboard-Esc
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      - name: Reset Focus
+        button: 5
+        unityInputName: Keyboard-F10
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 0
+        isAxisInverted: 1
+      orderIndex: 5
+    - name: Left Hand On Keyboard
+      isGamePadIncluded: 0
+      handedness: 1
+      groupingType: 3
+      entries:
+      - name: W / S Keys
+        button: 2
+        unityInputName: Keyboard-WS
+        isAxis: 1
+        isUnityInputAxis: 1
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 0
+        isAxisInverted: 1
+      - name: A Key
+        button: 0
+        unityInputName: Keyboard-A
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      - name: E Key
+        button: 1
+        unityInputName: Keyboard-E
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 0
+        isAxisInverted: 0
+      - name: D Key
+        button: 3
+        unityInputName: Keyboard-D
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      - name: Escape Key
+        button: 4
+        unityInputName: Keyboard-Esc
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      - name: Reset Focus
+        button: 5
+        unityInputName: Keyboard-F10
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      orderIndex: 0
+    - name: Left Hand On Lower Keyboard
+      isGamePadIncluded: 0
+      handedness: 1
+      groupingType: 6
+      entries:
+      - name: Z / X Keys
+        button: 2
+        unityInputName: Keyboard-ZX
+        isAxis: 1
+        isUnityInputAxis: 1
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 0
+        isAxisInverted: 1
+      - name: Spacebar
+        button: 0
+        unityInputName: Keyboard-Space
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      - name: Left Alt Key
+        button: 1
+        unityInputName: Keyboard-LeftAlt
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 0
+        isAxisInverted: 0
+      - name: Left Ctrl Key
+        button: 3
+        unityInputName: Keyboard-LeftCtrl
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      - name: Escape Key
+        button: 4
+        unityInputName: Keyboard-Esc
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      - name: Reset Focus
+        button: 5
+        unityInputName: Keyboard-F10
+        isAxis: 0
+        isUnityInputAxis: 0
+        isForPositiveUnityAxis: 0
+        isAlwaysListenedTo: 1
+        isAxisInverted: 0
+      orderIndex: 5
+    generalConfig:
+      axisTolerance: .00100000005
+      shortToLongPressSeconds: .25
+  state:
+    isListiningToInput: 1
+--- !u!114 &11466168
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -967709463, guid: 7d7c522833e760848971ae699b3e961f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  configs:
+  - sceneName: VoxPuzTutorialScene
+    type: 1
+  - sceneName: VoxPuzDemo
+    type: 0
+  - sceneName: VoxPuzMainMenuScene
+    type: 2
+  - sceneName: VoxPuzCreditScene
+    type: 3
+--- !u!114 &11467600
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!114 &11469932
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1638139273, guid: 7d7c522833e760848971ae699b3e961f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hudOffset: {x: 0, y: 0}
+--- !u!114 &11477632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &11482848
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 145668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -175091782, guid: 7d7c522833e760848971ae699b3e961f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 11494596}
+  - {fileID: 11401696}
+  - {fileID: 11483568}
+  - {fileID: 11465506}
+  - {fileID: 11420214}
+  - {fileID: 11466168}
+  - {fileID: 11469932}
+  - {fileID: 11440188}
+--- !u!114 &11483136
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ef004e9a25130da4b8c966f5e13ecc40, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Or [[Exit-holdPresent]] to exit
+--- !u!114 &11483568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 123044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 886565607, guid: 7d7c522833e760848971ae699b3e961f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraPrefab: {fileID: 11452754, guid: 76bd7cbdc524da640abfc8455f227ed0, type: 2}
+  loadingCameraPrefab: {fileID: 11418850, guid: b6fc917449a0c6142bbb2717fcfec9d3,
+    type: 2}
+--- !u!114 &11490796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: d9f2440b0c0a7447b8409e9ff6041121, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &11492096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 115358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -835068122, guid: 7d7c522833e760848971ae699b3e961f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBgmPlaying: 0
+  bgmAudioSource: {fileID: 8243756}
+  fade:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  fadeOutTime: 3
+--- !u!114 &11492980
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -263383984, guid: 7d7c522833e760848971ae699b3e961f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winLocation: \AirspaceApps\AVoxEclipse
+  macLocation: $HOME/Library/Application Support/AirspaceApps/[AppName]
+  useDefaultUnityLocation: 1
+  macPlats: 00000000010000000300000004000000
+--- !u!114 &11494596
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1335142492, guid: 7d7c522833e760848971ae699b3e961f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!222 &22206326
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144074}
+--- !u!222 &22221442
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112870}
+--- !u!222 &22232512
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128634}
+--- !u!222 &22286350
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160990}
+--- !u!223 &22305658
+Canvas:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134062}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingLayerID: -1050955853
+  m_SortingOrder: 999
+--- !u!224 &22425268
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144074}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 22459908}
+  m_RootOrder: 3
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: .150000006}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!224 &22436266
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160990}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 22459908}
+  m_RootOrder: 0
+  m_AnchorMin: {x: .0500000007, y: -.0199999996}
+  m_AnchorMax: {x: .949999988, y: 1.01999998}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!224 &22458582
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 112870}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 22459908}
+  m_RootOrder: 1
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!224 &22459908
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 134062}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: -.200000003, y: .200000003, z: .200000003}
+  m_Children:
+  - {fileID: 22436266}
+  - {fileID: 22458582}
+  - {fileID: 22489260}
+  - {fileID: 22425268}
+  m_Father: {fileID: 403928}
+  m_RootOrder: 1
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1000, y: 450}
+  m_Pivot: {x: .5, y: .5}
+--- !u!224 &22489260
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128634}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 22459908}
+  m_RootOrder: 2
+  m_AnchorMin: {x: 0, y: .100000001}
+  m_AnchorMax: {x: 1, y: .949999988}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 145668}
+  m_IsPrefabParent: 1

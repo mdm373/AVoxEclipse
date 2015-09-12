@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9B29C36A-F31D-4769-B33D-8F250A4C359E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SSGVoxPuzEditor</RootNamespace>
+    <AssemblyName>SSGVoxPuzEditor</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <UnityRoot>F:\Program Files\Unity</UnityRoot>
+    <PluginsRoot>..\UnityGame\Assets\ManagedCode</PluginsRoot>
+    <PluginsEditorRoot>..\UnityGame\Assets\Editor\ManagedCode</PluginsEditorRoot>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UnityRoot>F:\Program Files\Unity</UnityRoot>
+    <PluginsRoot>..\UnityGame\Assets\ManagedCode</PluginsRoot>
+    <PluginsEditorRoot>..\UnityGame\Assets\Editor\ManagedCode</PluginsEditorRoot>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UnityRoot>F:\Program Files\Unity</UnityRoot>
+    <PluginsRoot>..\UnityGame\Assets\ManagedCode</PluginsRoot>
+    <PluginsEditorRoot>..\UnityGame\Assets\Editor\ManagedCode</PluginsEditorRoot>
+  </PropertyGroup>
+  <ItemGroup>
+    <!--DepRefsGroup-->
+    <Reference Include="SSGCore">
+      <HintPath>$(SolutionDir)$(PluginsRoot)\SSGCore.dll</HintPath>
+    </Reference>
+    <Reference Include="SSGCoreEditor">
+      <HintPath>$(SolutionDir)$(PluginsEditorRoot)\SSGCoreEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="SSGVoxel">
+      <HintPath>$(SolutionDir)$(PluginsRoot)\SSGVoxel.dll</HintPath>
+    </Reference>
+    <Reference Include="SSGVoxelEditor">
+      <HintPath>$(SolutionDir)$(PluginsEditorRoot)\SSGVoxelEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="SSGLeap">
+      <HintPath>$(SolutionDir)$(PluginsRoot)\SSGLeap.dll</HintPath>
+    </Reference>
+    <Reference Include="SSGLeapEditor">
+      <HintPath>$(SolutionDir)$(PluginsEditorRoot)\SSGLeapEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="SSGHud">
+      <HintPath>$(SolutionDir)$(PluginsRoot)\SSGHud.dll</HintPath>
+    </Reference>
+    <Reference Include="SSGHudEditor">
+      <HintPath>$(SolutionDir)$(PluginsEditorRoot)\SSGHudEditor.dll</HintPath>
+    </Reference>
+    <!--EndDepRefsGroup-->
+    <Reference Include="NSubstitute">
+      <HintPath>..\packages\NSubstitute.1.8.1.0\lib\net35\NSubstitute.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEditor">
+      <HintPath>$(UnityRoot)\Editor\Data\Managed\UnityEditor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(UnityRoot)\Editor\Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <ProjectReference Include="..\SSGVoxPuz\SSGVoxPuz.csproj">
+      <Project>{8162776b-4104-41f5-8bcc-f5631ab83edd}</Project>
+      <Name>SSGVoxPuz</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlockSelection\ModelingMetaDataEntryFactory.cs" />
+    <Compile Include="Persist\PersistanceControllerEditor.cs" />
+    <Compile Include="PuzTutorial\TutorialText\TextBoxEventCompEditor.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)$(PluginsEditorRoot)\$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

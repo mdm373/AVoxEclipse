@@ -1,0 +1,17 @@
+F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuzEditor\bin\Debug\SSGVoxPuzEditor.dll
+F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuzEditor\bin\Debug\SSGVoxPuzEditor.pdb
+F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuzEditor\bin\Debug\NSubstitute.dll
+F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuzEditor\bin\Debug\nunit.framework.dll
+F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuzEditor\bin\Debug\SSGCore.dll
+F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuzEditor\bin\Debug\SSGCoreEditor.dll
+F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuzEditor\bin\Debug\SSGLeap.dll
+F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuzEditor\bin\Debug\SSGLeapEditor.dll
+F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuzEditor\bin\Debug\SSGVoxel.dll
+F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuzEditor\bin\Debug\SSGVoxelEditor.dll
+F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuzEditor\bin\Debug\NSubstitute.xml
+F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuzEditor\bin\Debug\nunit.framework.xml
+F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuzEditor\obj\Debug\SSGVoxPuzEditor.csprojResolveAssemblyReference.cache
+F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuzEditor\obj\Debug\SSGVoxPuzEditor.dll
+F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuzEditor\obj\Debug\SSGVoxPuzEditor.pdb
+F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuzEditor\bin\Debug\SSGHud.dll
+F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuzEditor\bin\Debug\SSGHudEditor.dll

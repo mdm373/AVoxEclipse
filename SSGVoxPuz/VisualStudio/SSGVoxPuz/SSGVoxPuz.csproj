@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8162776B-4104-41F5-8BCC-F5631AB83EDD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SSGVoxPuz</RootNamespace>
+    <AssemblyName>SSGVoxPuz</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <UnityRoot>F:\Program Files\Unity</UnityRoot>
+    <PluginsRoot>..\UnityGame\Assets\ManagedCode</PluginsRoot>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UnityRoot>F:\Program Files\Unity</UnityRoot>
+    <PluginsRoot>..\UnityGame\Assets\ManagedCode</PluginsRoot>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UnityRoot>F:\Program Files\Unity</UnityRoot>
+    <PluginsRoot>..\UnityGame\Assets\ManagedCode</PluginsRoot>
+  </PropertyGroup>
+  <ItemGroup>
+    <!--DepRefsGroup-->
+    <Reference Include="SSGCore">
+      <HintPath>$(SolutionDir)$(PluginsRoot)\SSGCore.dll</HintPath>
+    </Reference>
+    <Reference Include="SSGVoxel">
+      <HintPath>$(SolutionDir)$(PluginsRoot)\SSGVoxel.dll</HintPath>
+    </Reference>
+    <Reference Include="SSGLeap">
+      <HintPath>$(SolutionDir)$(PluginsRoot)\SSGLeap.dll</HintPath>
+    </Reference>
+    <Reference Include="SSGHud">
+      <HintPath>$(SolutionDir)$(PluginsRoot)\SSGHud.dll</HintPath>
+    </Reference>
+    <!--EndDepRefsGroup-->
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>$(UnityRoot)\Editor\Data\Managed\UnityEngine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(UnityRoot)\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <!--
+    <Reference Include="SSGCore">
+      <HintPath>$(SolutionDir)$(PluginsRoot)\SSGCore.dll</HintPath>
+    </Reference> 
+    -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlockSelection\BlockMenuItemsBuilder.cs" />
+    <Compile Include="BlockSelection\BlockModelingController.cs" />
+    <Compile Include="BlockSelection\BlockSelectionHudItem.cs" />
+    <Compile Include="BlockSelection\BlockSelectionMenuOption.cs" />
+    <Compile Include="BlockSelection\ModelBlockGenerator.cs" />
+    <Compile Include="BlockSelection\ModelingConstants.cs" />
+    <Compile Include="BlockSelection\ModelingUtil.cs" />
+    <Compile Include="Environment\CameraFadeOutBlockerData.cs" />
+    <Compile Include="Environment\CameraVeilFade.cs" />
+    <Compile Include="Environment\CustomCamera.cs" />
+    <Compile Include="Environment\GlobalCameraController.cs" />
+    <Compile Include="Environment\Environment.cs" />
+    <Compile Include="Environment\EnvironmentLoader.cs" />
+    <Compile Include="Environment\TextTrailComp.cs" />
+    <Compile Include="Interaction\DragIndicationController.cs" />
+    <Compile Include="Interaction\DragIndicationConfig.cs" />
+    <Compile Include="Interaction\HitIndicatorController.cs" />
+    <Compile Include="Interaction\PuzHint\HintConfigEntry.cs" />
+    <Compile Include="Interaction\PuzHint\HintController.cs" />
+    <Compile Include="Interaction\PuzHint\HintQueueItemComp.cs" />
+    <Compile Include="Interaction\PuzHint\HintToggleMenuOption.cs" />
+    <Compile Include="Interaction\SelectionHudItem.cs" />
+    <Compile Include="LeapAdapt\HandControllerWrapper.cs" />
+    <Compile Include="Environment\SceneCameraFadeInFadeOut.cs" />
+    <Compile Include="LeapAdapt\LeapDisconnectHUD.cs" />
+    <Compile Include="MainMenu\LabelOptionHandler.cs" />
+    <Compile Include="MainMenu\MainMenuController.cs" />
+    <Compile Include="MainMenu\MainMenuLogoOption.cs" />
+    <Compile Include="MainMenu\MenuLoader.cs" />
+    <Compile Include="Persist\DeleteMenuConfirmedMenuOption.cs" />
+    <Compile Include="Persist\PersistanceGlobalsController.cs" />
+    <Compile Include="Persist\PersistanceScreenShot.cs" />
+    <Compile Include="Persist\PersistanceVector3.cs" />
+    <Compile Include="Persist\PersistDeleteMenuOptionHandler.cs" />
+    <Compile Include="Persist\PersistPreviewOptionHandler.cs" />
+    <Compile Include="Persist\PreviewIncrementOption.cs" />
+    <Compile Include="Persist\PreviewLoadMenuOptionHandler.cs" />
+    <Compile Include="Persist\PreviewPersistIcon.cs" />
+    <Compile Include="Persist\SaveMenuConfirmedMenuOption.cs" />
+    <Compile Include="Persist\SaveOverwriteOptionHandler.cs" />
+    <Compile Include="Persist\Screenshot\ScreenshotController.cs" />
+    <Compile Include="Persist\Screenshot\ScreenshotHideTag.cs" />
+    <Compile Include="Persist\Screenshot\ScreenShotKeyListener.cs" />
+    <Compile Include="Persist\Screenshot\ScreenshotViewer.cs" />
+    <Compile Include="Pivot\PivotGuideToggleMenuOption.cs" />
+    <Compile Include="PuzAudio\AudioController.cs" />
+    <Compile Include="PuzGlobal\CacheQuickLoader.cs" />
+    <Compile Include="PuzGlobal\GlobalFaces\BlockTypeFace.cs" />
+    <Compile Include="PuzGlobal\GlobalFaces\HintFace.cs" />
+    <Compile Include="PuzGlobal\GlobalFaces\ModificationFace.cs" />
+    <Compile Include="PuzGlobal\GlobalFaces\PersistanceFace.cs" />
+    <Compile Include="PuzGlobal\GlobalFaces\PivotFace.cs" />
+    <Compile Include="PuzGlobal\GlobalFaces\PuzzleFacesController.cs" />
+    <Compile Include="PuzGlobal\GlobalFaces\MenuFace.cs" />
+    <Compile Include="PuzGlobal\GlobalFaces\RotationFace.cs" />
+    <Compile Include="PuzGlobal\GlobalFaces\SelectionFace.cs" />
+    <Compile Include="PuzGlobal\GlobalFaces\ToolFace.cs" />
+    <Compile Include="PuzGlobal\GlobalFaces\ZoomFace.cs" />
+    <Compile Include="PuzGlobal\PuzController.cs" />
+    <Compile Include="PuzGlobal\PuzFont\PuzFontConfig.cs" />
+    <Compile Include="PuzGlobal\PuzFont\PuzFontController.cs" />
+    <Compile Include="PuzGlobal\PuzFont\PuzFontTag.cs" />
+    <Compile Include="PuzGlobal\PuzFont\PuzFontType.cs" />
+    <Compile Include="PuzGlobal\PuzQuality\PuzCurrentQualityMenuOptionHandler.cs" />
+    <Compile Include="PuzGlobal\PuzQuality\PuzQualityLevelMenuOptionHandler.cs" />
+    <Compile Include="PuzGlobal\PuzQuality\PuzQualityManager.cs" />
+    <Compile Include="PuzGlobal\PuzQuality\VsyncDisplayOptionHandler.cs" />
+    <Compile Include="PuzGlobal\PuzQuality\VSyncToggleOptionHandler.cs" />
+    <Compile Include="PuzGlobal\QuickLoadItemList.cs" />
+    <Compile Include="PuzGlobal\QuickLoadPrefabLoader.cs" />
+    <Compile Include="PuzGlobal\SceneLoadPrefabLoader.cs" />
+    <Compile Include="PuzGlobal\PuzGlobalLoader.cs" />
+    <Compile Include="PuzGlobal\PuzLoadTag.cs" />
+    <Compile Include="PuzGlobal\QuickLoadItem.cs" />
+    <Compile Include="PuzGlobal\ResetMenuOption.cs" />
+    <Compile Include="PuzGlobal\SceneCustomDelegatorPersist.cs" />
+    <Compile Include="PuzGlobal\SceneLoadSequencer.cs" />
+    <Compile Include="PuzGlobal\SceneNavigation\ExitGameMenuOption.cs" />
+    <Compile Include="PuzGlobal\SceneNavigation\PuzSceneType.cs" />
+    <Compile Include="PuzGlobal\SceneNavigation\SceneNavigationConfig.cs" />
+    <Compile Include="PuzGlobal\SceneNavigation\SceneNavigationController.cs" />
+    <Compile Include="PuzGlobal\SceneNavigation\SceneNavigatorEnableTag.cs" />
+    <Compile Include="PuzGlobal\SceneNavigation\SceneTransitionMenuItem.cs" />
+    <Compile Include="PuzGlobal\SceneSingletonSceneLoadItem.cs" />
+    <Compile Include="PuzGlobal\SceneSingletonQuickLoadItem.cs" />
+    <Compile Include="PuzGlobal\SceneWalker.cs" />
+    <Compile Include="PuzGlobal\SceneLoadItem.cs" />
+    <Compile Include="PuzGlobal\UnloadActiveToggle.cs" />
+    <Compile Include="PuzGlobal\Versioning.cs" />
+    <Compile Include="PuzGlobal\VersionLogTag.cs" />
+    <Compile Include="PuzGlobal\VersionTextComp.cs" />
+    <Compile Include="PuzGlobal\VoxelContextLoadTag.cs" />
+    <Compile Include="PuzInput\ButtonEntryState.cs" />
+    <Compile Include="PuzInput\PuzButtonDriverType.cs" />
+    <Compile Include="PuzInput\PuzButtonEventType.cs" />
+    <Compile Include="PuzInput\PuzButtonGroupingController.cs" />
+    <Compile Include="PuzInput\PuzButtonConfigEntry.cs" />
+    <Compile Include="PuzInput\PuzButtonControllerComp.cs" />
+    <Compile Include="PuzInput\PuzButtonEntryController.cs" />
+    <Compile Include="PuzInput\PuzButtonEventData.cs" />
+    <Compile Include="PuzInput\PuzButtonGrouping.cs" />
+    <Compile Include="PuzInput\PuzButtonGroupingType.cs" />
+    <Compile Include="PuzInput\PuzButtonsConfig.cs" />
+    <Compile Include="PuzInput\PuzButtonsGeneralConfig.cs" />
+    <Compile Include="PuzInput\PuzButtonsState.cs" />
+    <Compile Include="PuzInput\PuzInputHandedness.cs" />
+    <Compile Include="PuzInput\PuzInputUI\GroupingConfigEntry.cs" />
+    <Compile Include="PuzInput\PuzInputUI\InputUiButtonConfig.cs" />
+    <Compile Include="PuzInput\PuzInputUI\InputUiController.cs" />
+    <Compile Include="PuzInput\PuzInputUI\InputUIButtonType.cs" />
+    <Compile Include="PuzInput\PuzInputUI\InputUIIcon.cs" />
+    <Compile Include="PuzMenu\EmptyMenuOption.cs" />
+    <Compile Include="PuzMenu\PuzMenuConfig.cs" />
+    <Compile Include="PuzMenu\PuzMenuControllerFaceAdapter.cs" />
+    <Compile Include="PuzMenu\PuzToggleMenuOptionHandler.cs" />
+    <Compile Include="PuzMod\ModControllerRequest.cs" />
+    <Compile Include="PuzMod\ModHandlerConfig.cs" />
+    <Compile Include="PuzMod\ModMaterialAlphaHandlerComp.cs" />
+    <Compile Include="PuzMod\ModRequestHandler.cs" />
+    <Compile Include="PuzMod\ModSymmatryMenuOption.cs" />
+    <Compile Include="PuzMod\PuzModHudIndicator.cs" />
+    <Compile Include="PuzMod\PuzModificationController.cs" />
+    <Compile Include="Interaction\HandSelectionGesture.cs" />
+    <Compile Include="Interaction\InteractionGlobalControllerComp.cs" />
+    <Compile Include="Interaction\InteractionResetMenuOptionComp.cs" />
+    <Compile Include="Interaction\InteractorSelectorRootComp.cs" />
+    <Compile Include="Interaction\PuzInteractable.cs" />
+    <Compile Include="PuzRotation\PuzRotationBallControllerComp.cs" />
+    <Compile Include="PuzRotation\PuzRotationBallGestureComp.cs" />
+    <Compile Include="PuzTutorial\PuzTriggerEvent\BaseWaitEvent.cs" />
+    <Compile Include="PuzTutorial\PuzTriggerEvent\WaitForMenuShowEvent.cs" />
+    <Compile Include="PuzTutorial\PuzTriggerEvent\WaitEventController.cs" />
+    <Compile Include="PuzTutorial\PuzTriggerEvent\WaitForBlockChange.cs" />
+    <Compile Include="PuzTutorial\PuzTriggerEvent\WaitForModelMove.cs" />
+    <Compile Include="PuzTutorial\PuzTriggerEvent\WaitForRotation.cs" />
+    <Compile Include="PuzTutorial\PuzTriggerEvent\WaitForSelectionChange.cs" />
+    <Compile Include="PuzTutorial\PuzTriggerEvent\WaitForZoom.cs" />
+    <Compile Include="PuzTutorial\Recording\FingerTransformData.cs" />
+    <Compile Include="PuzTutorial\Recording\HandTransformData.cs" />
+    <Compile Include="PuzTutorial\Recording\PlaybackEvent.cs" />
+    <Compile Include="PuzTutorial\Recording\PlaybackKeyController.cs" />
+    <Compile Include="PuzTutorial\Recording\PuzHandPlaybackConfig.cs" />
+    <Compile Include="PuzTutorial\Recording\PuzHandRecorder.cs" />
+    <Compile Include="PuzTutorial\Recording\PuzHandRecordingConfig.cs" />
+    <Compile Include="PuzTutorial\Recording\PuzHandRecordingData.cs" />
+    <Compile Include="PuzTutorial\Recording\PuzHandRecordingDataSample.cs" />
+    <Compile Include="PuzTutorial\Recording\PuzHandRecordingPlayback.cs" />
+    <Compile Include="PuzTutorial\Recording\PuzInputRecorder.cs" />
+    <Compile Include="PuzTutorial\Recording\PuzInputRecordingConfig.cs" />
+    <Compile Include="PuzTutorial\Recording\PuzInputRecordingData.cs" />
+    <Compile Include="PuzTutorial\Recording\PuzInputRecordingDataSample.cs" />
+    <Compile Include="PuzTutorial\Recording\PuzRecordingDataComp.cs" />
+    <Compile Include="PuzTutorial\Recording\PuzInputRecordingPlayback.cs" />
+    <Compile Include="PuzTutorial\Recording\PuzRecorder.cs" />
+    <Compile Include="PuzTutorial\Recording\PuzRecordingPlayback.cs" />
+    <Compile Include="PuzTutorial\Recording\RecordableFinger.cs" />
+    <Compile Include="PuzTutorial\Recording\RecordableHand.cs" />
+    <Compile Include="PuzTutorial\Recording\TransformData.cs" />
+    <Compile Include="PuzTutorial\TutorialController.cs" />
+    <Compile Include="PuzTutorial\TutorialEvent\CompoundEvent.cs" />
+    <Compile Include="PuzTutorial\TutorialEvent\PauseEvent.cs" />
+    <Compile Include="PuzTutorial\TutorialPrompt\ButtonPromptEvent.cs" />
+    <Compile Include="PuzTutorial\TutorialPrompt\PromptQuickLoad.cs" />
+    <Compile Include="PuzTutorial\TutorialPrompt\TutorialButtonPromptController.cs" />
+    <Compile Include="PuzTutorial\TutorialPrompt\TutorialButtonPrompt.cs" />
+    <Compile Include="PuzTutorial\TutorialPuzControl\HintsEnabledEvent.cs" />
+    <Compile Include="PuzTutorial\TutorialPuzControl\MenuHideEvent.cs" />
+    <Compile Include="PuzTutorial\TutorialPuzControl\ModificationHaultEvent.cs" />
+    <Compile Include="PuzTutorial\TutorialPuzControl\ShowMenuEvent.cs" />
+    <Compile Include="PuzTutorial\TutorialPuzControl\ToolSetEvent.cs" />
+    <Compile Include="PuzTutorial\TutorialPuzControl\ZoomDisableEvent.cs" />
+    <Compile Include="PuzTutorial\TutorialText\TextConfigEntry.cs" />
+    <Compile Include="PuzTutorial\TutorialPuzControl\BlockTypeEnableEvent.cs" />
+    <Compile Include="PuzTutorial\TutorialPuzControl\LoadPuzzleStateEvent.cs" />
+    <Compile Include="PuzTutorial\TutorialPuzControl\MenuDisableEvent.cs" />
+    <Compile Include="PuzTutorial\TutorialPuzControl\PivotEnableEvent.cs" />
+    <Compile Include="PuzTutorial\TutorialPuzControl\RotateDisableEvent.cs" />
+    <Compile Include="PuzTutorial\TutorialPuzControl\SelectionEnableEvent.cs" />
+    <Compile Include="PuzTutorial\TutorialPuzControl\ToolsEnabledEvent.cs" />
+    <Compile Include="PuzTutorial\TutorialText\GeneralTextBoxConfig.cs" />
+    <Compile Include="PuzTutorial\TutorialText\PuzTextController.cs" />
+    <Compile Include="PuzTutorial\TutorialText\ScrollingTextBox.cs" />
+    <Compile Include="PuzTutorial\TutorialText\StaticTextBox.cs" />
+    <Compile Include="PuzTutorial\TutorialText\TextBox.cs" />
+    <Compile Include="PuzTutorial\TutorialText\TextBoxEventComp.cs" />
+    <Compile Include="PuzTutorial\TutorialEvent\TutorialEventComp.cs" />
+    <Compile Include="PuzTutorial\TutorialEvent\TutorialEventConfig.cs" />
+    <Compile Include="PuzTutorial\TutorialEvent\TutorialEventController.cs" />
+    <Compile Include="PuzTutorial\TutorialText\TextBoxType.cs" />
+    <Compile Include="Tools\PuzTool.cs" />
+    <Compile Include="Interaction\PuzInteractableStateManager.cs" />
+    <Compile Include="Tools\PuzToolConfig.cs" />
+    <Compile Include="Tools\PuzToolController.cs" />
+    <Compile Include="Tools\PuzToolHandler.cs" />
+    <Compile Include="Tools\PuzToolHandlerBrush.cs" />
+    <Compile Include="Tools\PuzToolHandlerBubble.cs" />
+    <Compile Include="Tools\PuzToolHandlerBubbleConfig.cs" />
+    <Compile Include="Tools\PuzToolHandlerEraser.cs" />
+    <Compile Include="Tools\PuzToolHandlerPencil.cs" />
+    <Compile Include="Tools\PuzToolHudIndicator.cs" />
+    <Compile Include="Tools\PuzToolMenuOption.cs" />
+    <Compile Include="PuzZoom\PuzZoomControllerComp.cs" />
+    <Compile Include="Interaction\QueueItemHandler.cs" />
+    <Compile Include="Interaction\QueueItemComp.cs" />
+    <Compile Include="Interaction\TransformQueue.cs" />
+    <Compile Include="Persist\PersistanceController.cs" />
+    <Compile Include="Persist\PersistanceWorldData.cs" />
+    <Compile Include="Persist\PersistanceWorldDataPoint.cs" />
+    <Compile Include="Persist\PersistLoadMenuOptionHandler.cs" />
+    <Compile Include="Persist\PersistSaveMenuOptionHandler.cs" />
+    <Compile Include="Pivot\PivotGuidesControllerComp.cs" />
+    <Compile Include="Pivot\PivotPointAdjustControllerComp.cs" />
+    <Compile Include="Pivot\PivotPointAdjustGestureComp.cs" />
+    <Compile Include="PuzInput\PuzButton.cs" />
+    <Compile Include="Interaction\SelectionControllerComp.cs" />
+    <Compile Include="PuzInput\PuzButtonController.cs" />
+    <Compile Include="PuzMenu\PuzDynaMenuBuilder.cs" />
+    <Compile Include="PuzMenu\PuzMenuOptionLookup.cs" />
+    <Compile Include="PuzMenu\PuzMenuOptionLabelHandlerComp.cs" />
+    <Compile Include="PuzMenu\PuzMenuOptionType.cs" />
+    <Compile Include="PuzMenu\PuzMenuOptionTypeBinding.cs" />
+    <Compile Include="PuzMenu\PuzMenuShowControllerComp.cs" />
+    <Compile Include="PuzMenu\PuzMenuToggleComp.cs" />
+    <Compile Include="PuzMenu\PuzMenuCameraRootComp.cs" />
+    <Compile Include="PuzMenu\PuzMenuControllerComp.cs" />
+    <Compile Include="PuzMenu\PuzMenuInteractable.cs" />
+    <Compile Include="PuzMenu\PuzMenuOptionCloseHandlerComp.cs" />
+    <Compile Include="PuzMenu\PuzMenuOptionColliderComp.cs" />
+    <Compile Include="PuzMenu\PuzMenuOptionComp.cs" />
+    <Compile Include="PuzMenu\PuzMenuOptionConfig.cs" />
+    <Compile Include="PuzMenu\PuzMenuOptionHandlerComp.cs" />
+    <Compile Include="PuzMenu\PuzMenuScreenComp.cs" />
+    <Compile Include="PuzMenu\PuzMenuSelectionConfig.cs" />
+    <Compile Include="PuzMenu\PuzMenuSelectorComp.cs" />
+    <Compile Include="PuzMenu\PuzScreenLayoutConfig.cs" />
+    <Compile Include="PuzMenu\PuzScreenLayoutType.cs" />
+    <Compile Include="PuzMenu\PuzMenuScreenNavMenuOption.cs" />
+    <Compile Include="PuzMenu\PuzTypeTextMenuOptionComp.cs" />
+    <Compile Include="Tools\PuzToolMEnuOptionBuilder.cs" />
+    <Compile Include="Tools\VoxelSpaceUtil.cs" />
+    <Compile Include="Utility\DestroyTag.cs" />
+    <Compile Include="Utility\LayerUtil.cs" />
+    <Compile Include="Welcome\ControlPromptGenerator.cs" />
+    <Compile Include="Welcome\WelcomeScreenController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PuzGlobal\PuzVR\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetPath)" "$(SolutionDir)$(PluginsRoot)\$(TargetFileName)"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

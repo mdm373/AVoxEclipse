@@ -1,0 +1,200 @@
+fileFormatVersion: 2
+guid: b0b3f84f65ad0554da891e7df4c605db
+timeCreated: 1440249013
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Logo-Big
+    21300002: Logo-Small
+    21300004: Logo-Abbrv-Big
+    21300006: Logo-Abbrv-Small
+    21300008: Logo-Part-V
+    21300010: Logo-Part-A
+    21300012: Logo-Part-Eclipse
+    21300014: Logo-Part-Center
+    21300016: Logo-Part-Vox
+    21300018: Logo-Part-Back-Right
+    21300020: Logo-Part-Back-Bottom
+    21300022: Logo-Part-Back-Left
+    21300024: Logo-Part-Frame
+    21300026: Logo-Part-Outline
+    21300028: Logo-Part-Center-Light
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: 2
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 100
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Logo-Big
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1562
+        width: 892
+        height: 526
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Logo-Small
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1220
+        width: 505
+        height: 297
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Logo-Abbrv-Big
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 874
+        width: 379
+        height: 261
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Logo-Part-A
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 1102
+        width: 57
+        height: 157
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Logo-Part-Eclipse
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 1066
+        width: 264
+        height: 137
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Logo-Part-Center
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 748
+        width: 305
+        height: 219
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Logo-Part-Vox
+      rect:
+        serializedVersion: 2
+        x: 1591
+        y: 729
+        width: 181
+        height: 170
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Logo-Part-Back-Right
+      rect:
+        serializedVersion: 2
+        x: 1865
+        y: 761
+        width: 461
+        height: 221
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Logo-Part-Back-Bottom
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 1301
+        width: 798
+        height: 197
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Logo-Part-Back-Left
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 967
+        width: 268
+        height: 234
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Logo-Part-Frame
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 1612
+        width: 866
+        height: 499
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Logo-Part-Outline
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 84
+        width: 896
+        height: 526
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Logo-Part-Center-Light
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 482
+        width: 305
+        height: 219
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,20 @@
+<b>[[Primary-terse]]:</b>
+Edit Model, Select Menu Item
+
+<b>[[Primary-holdTerse]]:</b>
+Open Main Menu
+
+<b>[[ScrollClick-terse]]:</b>
+Toggle Move Mode
+
+<b>[[ScrollClick-holdTerse]]:</b>
+Rotate Model
+
+<b>[[Scroll-terse]]:</b>
+Zoom In / Out
+
+<b>[[Secondary-holdTerse]]:</b>
+Open Color Menu
+
+<b>[[Secondary-terse]]:</b>
+Select Menu Item

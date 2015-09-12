@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VSModuleDependency xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DepenceyEntry ProjectName="SSGCore" CompanyShortName="SSG" />
+  <DepenceyEntry ProjectName="SSGVoxel" CompanyShortName="SSG" />
+  <DepenceyEntry ProjectName="SSGLeap" CompanyShortName="SSG" />
+  <DepenceyEntry ProjectName="SSGHud" CompanyShortName="SSG" />
+</VSModuleDependency>

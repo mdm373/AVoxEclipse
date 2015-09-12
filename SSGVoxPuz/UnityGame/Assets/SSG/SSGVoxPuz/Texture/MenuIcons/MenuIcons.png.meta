@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 52b955ca8edfeff4ea87643fb87798ee
+timeCreated: 1440100574
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PencilIcon
+    21300002: EraserIcon
+    21300004: SystemIcon
+    21300006: RefreshIcon
+    21300008: RadialBack
+    21300010: BrushIcon
+    21300012: BubbleIcon
+    21300014: SaveIcon
+    21300016: LoadIcon
+    21300018: SquareBack
+    21300020: SquareFore
+    21300022: RadialFore
+    21300024: HexBack
+    21300026: HexFore
+    21300028: Arrow
+    21300030: TitleBack
+    21300032: TitleFore
+    21300034: SubTitleBack
+    21300036: SubTitleFore
+    21300038: ConfirmIcon
+    21300040: SquareMedBack
+    21300042: SquareMedFore
+    21300044: TextIcon
+    21300046: SymmIcon-Enable
+    21300048: SymmIcon-Disable
+    21300050: ClearIcon
+    21300052: Pivot-Show-Icon
+    21300054: Pivot-Hide-Icon
+    21300056: PlayIcon
+    21300058: Question-Icon
+    21300060: Exit-Door-Icon
+    21300062: stars-icon
+    21300064: question-hollow-icon
+    21300066: tool-hilight
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: 2
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: PencilIcon
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1279
+        width: 170
+        height: 166
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: EraserIcon
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 1255
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SystemIcon
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 1256
+        width: 190
+        height: 165
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RefreshIcon
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 1169
+        width: 174
+        height: 246
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RadialBack
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 994
+        width: 369
+        height: 381
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BrushIcon
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 963
+        width: 196
+        height: 205
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BubbleIcon
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 977
+        width: 224
+        height: 205
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SaveIcon
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 983
+        width: 204
+        height: 190
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LoadIcon
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 978
+        width: 203
+        height: 178
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SquareBack
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 598
+        width: 301
+        height: 293
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SquareFore
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 619
+        width: 273
+        height: 250
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: RadialFore
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 612
+        width: 305
+        height: 352
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HexBack
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 188
+        width: 340
+        height: 335
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HexFore
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 196
+        width: 274
+        height: 300
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Arrow
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 755
+        width: 202
+        height: 170
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TitleBack
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 1157
+        width: 1201
+        height: 223
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TitleFore
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 944
+        width: 1156
+        height: 182
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SubTitleBack
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 638
+        width: 1084
+        height: 235
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SubTitleFore
+      rect:
+        serializedVersion: 2
+        x: 1614
+        y: 422
+        width: 1032
+        height: 191
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ConfirmIcon
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 516
+        width: 202
+        height: 207
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SquareMedBack
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 130
+        width: 775
+        height: 293
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SquareMedFore
+      rect:
+        serializedVersion: 2
+        x: 1576
+        y: 154
+        width: 726
+        height: 235
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TextIcon
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 1409
+        width: 778
+        height: 52
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SymmIcon-Enable
+      rect:
+        serializedVersion: 2
+        x: 2839
+        y: 1184
+        width: 142
+        height: 261
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SymmIcon-Disable
+      rect:
+        serializedVersion: 2
+        x: 2839
+        y: 859
+        width: 142
+        height: 262
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ClearIcon
+      rect:
+        serializedVersion: 2
+        x: 2817
+        y: 606
+        width: 186
+        height: 198
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Pivot-Show-Icon
+      rect:
+        serializedVersion: 2
+        x: 3086
+        y: 958
+        width: 171
+        height: 191
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Pivot-Hide-Icon
+      rect:
+        serializedVersion: 2
+        x: 3283
+        y: 958
+        width: 171
+        height: 191
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PlayIcon
+      rect:
+        serializedVersion: 2
+        x: 3122
+        y: 1207
+        width: 127
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Question-Icon
+      rect:
+        serializedVersion: 2
+        x: 3208
+        y: 677
+        width: 170
+        height: 208
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Exit-Door-Icon
+      rect:
+        serializedVersion: 2
+        x: 3189
+        y: 443
+        width: 126
+        height: 190
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stars-icon
+      rect:
+        serializedVersion: 2
+        x: 3144
+        y: 207
+        width: 250
+        height: 211
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: question-hollow-icon
+      rect:
+        serializedVersion: 2
+        x: 2826
+        y: 280
+        width: 157
+        height: 199
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: tool-hilight
+      rect:
+        serializedVersion: 2
+        x: 2703
+        y: 5
+        width: 393
+        height: 240
+      alignment: 4
+      pivot: {x: 0, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

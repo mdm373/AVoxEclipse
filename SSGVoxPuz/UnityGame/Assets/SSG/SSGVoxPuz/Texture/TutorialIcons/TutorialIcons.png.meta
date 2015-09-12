@@ -1,0 +1,418 @@
+fileFormatVersion: 2
+guid: 052c37ccdb5f7b141bec4774b179f55d
+timeCreated: 1439951795
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: TextBox-Large
+    21300002: MB-Backing
+    21300004: Keyboard-Button-Small
+    21300006: Keyboard-Button-Small-Shadow
+    21300008: Keyboard-Button-Large
+    21300010: Controller-Button-Nutral
+    21300012: controller-button-shadow
+    21300014: KEyboard-button-large-shadow
+    21300016: MB-LEFT
+    21300018: MB-Center
+    21300020: MB-Right
+    21300022: Controller-Bumper
+    21300024: controller-button-small
+    21300026: Controller-trigger
+    21300028: controller-trigger-shadow
+    21300030: Controller-Bumper-Shadow
+    21300032: Controller-Stick
+    21300034: Controller-Green
+    21300036: Controller-Blue
+    21300038: Controller-Red
+    21300040: Controller-Yellow
+    21300042: Controller-button-small-shadow
+    21300044: controller-stick-shadow
+    21300046: TextBox-Small
+    21300048: confirm-container
+    21300050: static-box
+    21300052: text-box-static-small
+    21300054: Confirm-Container-Rounded
+    21300056: gamepad-left-hint
+    21300058: gamepad-right-hint
+    21300060: keyboard-right-hint
+    21300062: keyboard-left-hint
+    21300064: mouse-hint
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 8192
+  textureSettings:
+    filterMode: 2
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: TextBox-Large
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 806
+        width: 1179
+        height: 495
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MB-Backing
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1107
+        width: 241
+        height: 157
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Keyboard-Button-Small
+      rect:
+        serializedVersion: 2
+        x: 2722
+        y: 1211
+        width: 105
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Keyboard-Button-Small-Shadow
+      rect:
+        serializedVersion: 2
+        x: 2841
+        y: 1213
+        width: 106
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Keyboard-Button-Large
+      rect:
+        serializedVersion: 2
+        x: 3004
+        y: 1213
+        width: 214
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Controller-Button-Nutral
+      rect:
+        serializedVersion: 2
+        x: 2723
+        y: 1094
+        width: 104
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: controller-button-shadow
+      rect:
+        serializedVersion: 2
+        x: 2874
+        y: 1083
+        width: 104
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: KEyboard-button-large-shadow
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 1095
+        width: 214
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MB-LEFT
+      rect:
+        serializedVersion: 2
+        x: 2403
+        y: 935
+        width: 93
+        height: 126
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MB-Center
+      rect:
+        serializedVersion: 2
+        x: 2525
+        y: 935
+        width: 45
+        height: 145
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: MB-Right
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 935
+        width: 90
+        height: 126
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Controller-Bumper
+      rect:
+        serializedVersion: 2
+        x: 2704
+        y: 1028
+        width: 157
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: controller-button-small
+      rect:
+        serializedVersion: 2
+        x: 2884
+        y: 995
+        width: 103
+        height: 66
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Controller-trigger
+      rect:
+        serializedVersion: 2
+        x: 3063
+        y: 932
+        width: 86
+        height: 132
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: controller-trigger-shadow
+      rect:
+        serializedVersion: 2
+        x: 3173
+        y: 930
+        width: 86
+        height: 133
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Controller-Bumper-Shadow
+      rect:
+        serializedVersion: 2
+        x: 2710
+        y: 949
+        width: 158
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Controller-Stick
+      rect:
+        serializedVersion: 2
+        x: 2872
+        y: 826
+        width: 129
+        height: 137
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Controller-Green
+      rect:
+        serializedVersion: 2
+        x: 2337
+        y: 813
+        width: 104
+        height: 101
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Controller-Blue
+      rect:
+        serializedVersion: 2
+        x: 2462
+        y: 802
+        width: 103
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Controller-Red
+      rect:
+        serializedVersion: 2
+        x: 2608
+        y: 809
+        width: 103
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Controller-Yellow
+      rect:
+        serializedVersion: 2
+        x: 2742
+        y: 804
+        width: 102
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Controller-button-small-shadow
+      rect:
+        serializedVersion: 2
+        x: 3036
+        y: 844
+        width: 126
+        height: 57
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: controller-stick-shadow
+      rect:
+        serializedVersion: 2
+        x: 3182
+        y: 842
+        width: 103
+        height: 65
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TextBox-Small
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 583
+        width: 593
+        height: 176
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: confirm-container
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 433
+        width: 295
+        height: 238
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: static-box
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 70
+        width: 1516
+        height: 278
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: text-box-static-small
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 438
+        width: 620
+        height: 108
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Confirm-Container-Rounded
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 419
+        width: 280
+        height: 238
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gamepad-left-hint
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 673
+        width: 551
+        height: 623
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: gamepad-right-hint
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 43
+        width: 551
+        height: 623
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: keyboard-right-hint
+      rect:
+        serializedVersion: 2
+        x: 2323
+        y: 76
+        width: 723
+        height: 353
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: keyboard-left-hint
+      rect:
+        serializedVersion: 2
+        x: 2347
+        y: 474
+        width: 447
+        height: 305
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: mouse-hint
+      rect:
+        serializedVersion: 2
+        x: 3110
+        y: 268
+        width: 379
+        height: 516
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

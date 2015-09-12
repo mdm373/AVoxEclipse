@@ -1,0 +1,214 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &149338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 460408}
+  - 114: {fileID: 11431638}
+  - 114: {fileID: 11424916}
+  - 114: {fileID: 11454044}
+  m_Layer: 0
+  m_Name: menu-event-system
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &199200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 413664}
+  - 114: {fileID: 11486446}
+  m_Layer: 12
+  m_Name: menu-controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &413664
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 199200}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .0199999996, y: .0199999996, z: .0199999996}
+  m_Children:
+  - {fileID: 460408}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &460408
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149338}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.19999981, y: 17.1000004, z: -85.7666626}
+  m_LocalScale: {x: 333.333344, y: 333.333344, z: 333.333344}
+  m_Children: []
+  m_Father: {fileID: 413664}
+  m_RootOrder: 0
+--- !u!114 &11424916
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: .5
+  m_AllowActivationOnMobileDevice: 0
+--- !u!114 &11431638
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 0
+  m_DragThreshold: 5
+--- !u!114 &11454044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 149338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1997211142, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllowActivationOnStandalone: 0
+--- !u!114 &11486446
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 199200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 7425653, guid: 7d7c522833e760848971ae699b3e961f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openSound: {fileID: 8300000, guid: 0248423d0a08c4470b25d529e36f25e0, type: 3}
+  closeOptionConfig:
+    isHoverable: 1
+    isSelectable: 1
+    backgroundNormal: {r: .905882418, g: .905882418, b: .909803987, a: 1}
+    backgroundHover: {r: .858620644, g: .900202811, b: 1, a: 1}
+    screenTitle: Title
+    selectSound: {fileID: 8300000, guid: 4d519690f26a5474c92dc1a5049c433d, type: 3}
+    hoverSound: {fileID: 8300000, guid: 8f5d20bd74686418e9abfa6e3d2735fc, type: 3}
+  titleOptionConfig:
+    isHoverable: 0
+    isSelectable: 0
+    backgroundNormal: {r: .905882418, g: .905882418, b: .909803987, a: 1}
+    backgroundHover: {r: .858620644, g: .900202811, b: 1, a: 1}
+    screenTitle: Title
+    selectSound: {fileID: 8300000, guid: 4d519690f26a5474c92dc1a5049c433d, type: 3}
+    hoverSound: {fileID: 8300000, guid: 8f5d20bd74686418e9abfa6e3d2735fc, type: 3}
+  isOpenSilent: 0
+  closeItemPrefab: {fileID: 196586, guid: f3501eeeb0f9e664e908bfd6e22a9d8e, type: 2}
+  closeIconPrefab: {fileID: 164334, guid: bb371a27b7a62274399eb134657076f2, type: 2}
+  backIconPrefab: {fileID: 123500, guid: 8e19064a1abc322498013113746319f4, type: 2}
+  titleItemPrefab: {fileID: 105672, guid: ec0b6bc2ad5104d40bec19cf0017d4b8, type: 2}
+  titleIconPrefab: {fileID: 110420, guid: affe356f21da8bc40b4cf5daa56b9128, type: 2}
+  subTitleItemPrefab: {fileID: 138712, guid: 4d40526c3b9cb7341bf3e2b2f3bac151, type: 2}
+  subTitleIconPrefab: {fileID: 165614, guid: db97a389e5744044fa6c4557f37a53a7, type: 2}
+  emptyIconPrefab: {fileID: 112838, guid: b933ec5de463a974eafda362ff9c8321, type: 2}
+  selectionConfig:
+    selectionLayerMask:
+      serializedVersion: 2
+      m_Bits: 2048
+    maxDistance: 10
+    selectionButton: 0
+    alternateSelectionButton: 1
+  hudOffset: {x: 0, y: 0}
+  isClosable: 1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: closeOptionConfig.backgroundHover.r
+      value: .858620644
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: closeOptionConfig.backgroundHover.g
+      value: .900202811
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: closeOptionConfig.backgroundHover.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: titleOptionConfig.backgroundHover.r
+      value: .858620644
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: titleOptionConfig.backgroundHover.g
+      value: .900202811
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: titleOptionConfig.backgroundHover.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: titleOptionConfig.backgroundNormal.r
+      value: .905882418
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: titleOptionConfig.backgroundNormal.g
+      value: .905882418
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: titleOptionConfig.backgroundNormal.b
+      value: .909803987
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: closeOptionConfig.backgroundNormal.r
+      value: .905882418
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: closeOptionConfig.backgroundNormal.g
+      value: .905882418
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: closeOptionConfig.backgroundNormal.b
+      value: .909803987
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: emptyIconPrefab
+      value: 
+      objectReference: {fileID: 112838, guid: b933ec5de463a974eafda362ff9c8321, type: 2}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 199200}
+  m_IsPrefabParent: 1
