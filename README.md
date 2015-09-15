@@ -17,16 +17,16 @@ Rather than the standard project location, the bulk of the scripting for this pr
 
 The “UnityGame” directory contains the root of the project for editing in Unity3D. Open this location in Unity 5 or greater to start editing the core game.
 
-Custom assets specific to the project can be found under these locations:
+Assets specific to the project can be found under the folders below. Everything else is more or less imported from the asset store or another custom unity project.
 * “Assets/SSG/SSGVoxPuz” 
 * “Assets/Editor/SSG/SSGVoxPuz”. 
+ 
+To start taking a look at the core gameplay, open up the following scene in Unity:
+* "Assets/SSG/SSGVoxPuz/Scene/VoxPuzDemo"
 
-Everything else is more or less imported from the asset store or another custom unity project.
+## Can you just show me the fancy leap motion hand wavy code?
 
-
-## Can you just show me the fancy leap motion handy wavy code?
-
-From Unity, open up the scene “VoxPuzDemo”. From here take a look at the “puzzle-controls” game object. This is the root of all of the game's heavy lifting. Here is a brief rundown on each of those controllers. Ones particularly Leap Motion “centric” have been highlighted.
+From Unity, open up the scene “VoxPuzDemo” mentioned above. From here take a look at the “puzzle-controls” game object. This is the root of all of the game's heavy lifting. Here's a brief rundown on each of those controllers. Those particularly Leap Motion “centric” have been highlighted.
 * **hint-controller:** That nifty hint box at the top of the screen
 * **tool-controller:**  Logic around the currently selected user “tool” (Pencil, Brush, etc…)
 * **menu-system:** the root of menu structure. Open up the “menu-controller” prefab for even more info
