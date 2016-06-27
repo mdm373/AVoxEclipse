@@ -301,8 +301,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.0899999961, z: .25}
-  m_LocalScale: {x: .00999999978, y: .00999999978, z: .00999999978}
+  m_LocalPosition: {x: 0, y: -0.089999996, z: 0.25}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children:
   - {fileID: 451498}
   - {fileID: 22459908}
@@ -315,7 +315,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .00544860959, y: -9.00628281, z: 25.986866}
+  m_LocalPosition: {x: 0.005448818, y: -9.006283, z: 25.986866}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 441200}
@@ -351,7 +351,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 145668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.37300014, y: 0, z: 0}
+  m_LocalPosition: {x: 6.373, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 463252}
@@ -397,7 +397,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 115358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.44860959e-05, y: -.0900628269, z: .259868652}
+  m_LocalPosition: {x: 0.000054486096, y: -0.09006283, z: 0.25986865}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 494578}
@@ -479,6 +479,7 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -503,6 +504,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -513,6 +515,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -523,6 +526,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -533,6 +537,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &11401696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -747,20 +752,18 @@ MonoBehaviour:
     isAxis: 0
     isPositiveOnly: 0
   groupingConfigs:
+  - grouping: 5
+    displayName: Right Hand On Gamepad
   - grouping: 0
     displayName: Right Hand On Mouse
-  - grouping: 1
-    displayName: Left Hand On Mouse
   - grouping: 2
-    displayName: Lower Right Keyboard
+    displayName: Right Hand On Keyboard
   - grouping: 3
-    displayName: Top Left Keyboard
+    displayName: Left Hand On WSAD
   - grouping: 4
-    displayName: Left Side Of Controller
+    displayName: Left Hand On Gamepad
   - grouping: 6
-    displayName: Lower Left Keyboard
-  - grouping: 5
-    displayName: Right Side Of Controller
+    displayName: Left Hand On Spacebar
 --- !u!114 &11440188
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -789,6 +792,7 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   waitFrames: 10
   embeddedReplacementImage: {fileID: 0}
   onColor: {r: 1, g: 1, b: 1, a: 1}
@@ -811,6 +815,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: ef004e9a25130da4b8c966f5e13ecc40, type: 3}
     m_FontSize: 40
@@ -819,6 +829,7 @@ MonoBehaviour:
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 1
+    m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -1194,8 +1205,8 @@ MonoBehaviour:
         isAxisInverted: 0
       orderIndex: 5
     generalConfig:
-      axisTolerance: .00100000005
-      shortToLongPressSeconds: .25
+      axisTolerance: 0.001
+      shortToLongPressSeconds: 0.25
   state:
     isListiningToInput: 1
 --- !u!114 &11466168
@@ -1264,6 +1275,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -1305,6 +1322,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: ef004e9a25130da4b8c966f5e13ecc40, type: 3}
     m_FontSize: 40
@@ -1313,6 +1336,7 @@ MonoBehaviour:
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 1
+    m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -1345,6 +1369,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: d9f2440b0c0a7447b8409e9ff6041121, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
@@ -1381,6 +1411,7 @@ MonoBehaviour:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   fadeOutTime: 3
 --- !u!114 &11492980
 MonoBehaviour:
@@ -1447,8 +1478,10 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: -1050955853
   m_SortingOrder: 999
+  m_TargetDisplay: 0
 --- !u!224 &22425268
 RectTransform:
   m_ObjectHideFlags: 1
@@ -1462,10 +1495,10 @@ RectTransform:
   m_Father: {fileID: 22459908}
   m_RootOrder: 3
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: .150000006}
+  m_AnchorMax: {x: 1, y: 0.15}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: .5, y: .5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22436266
 RectTransform:
   m_ObjectHideFlags: 1
@@ -1478,11 +1511,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22459908}
   m_RootOrder: 0
-  m_AnchorMin: {x: .0500000007, y: -.0199999996}
-  m_AnchorMax: {x: .949999988, y: 1.01999998}
+  m_AnchorMin: {x: 0.05, y: -0.02}
+  m_AnchorMax: {x: 0.95, y: 1.02}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: .5, y: .5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22458582
 RectTransform:
   m_ObjectHideFlags: 1
@@ -1499,7 +1532,7 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: .5, y: .5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22459908
 RectTransform:
   m_ObjectHideFlags: 1
@@ -1508,7 +1541,7 @@ RectTransform:
   m_GameObject: {fileID: 134062}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -.200000003, y: .200000003, z: .200000003}
+  m_LocalScale: {x: -0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 22436266}
   - {fileID: 22458582}
@@ -1520,7 +1553,7 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1000, y: 450}
-  m_Pivot: {x: .5, y: .5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22489260
 RectTransform:
   m_ObjectHideFlags: 1
@@ -1533,11 +1566,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22459908}
   m_RootOrder: 2
-  m_AnchorMin: {x: 0, y: .100000001}
-  m_AnchorMax: {x: 1, y: .949999988}
+  m_AnchorMin: {x: 0, y: 0.1}
+  m_AnchorMax: {x: 1, y: 0.95}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: .5, y: .5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
