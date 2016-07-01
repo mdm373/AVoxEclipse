@@ -11,3 +11,17 @@ F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuz\obj\Debug\SSGVoxPuz.csprojRes
 F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuz\bin\Debug\SSGHud.dll
 F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuz\bin\Debug\UnityEngine.dll
 F:\Projects\unity\SSGVoxPuz\VisualStudio\SSGVoxPuz\bin\Debug\UnityEngine.UI.dll
+F:\Projects\unity\AvoxEclipseGit\SSGVoxPuz\VisualStudio\SSGVoxPuz\bin\Debug\SSGVoxPuz.dll
+F:\Projects\unity\AvoxEclipseGit\SSGVoxPuz\VisualStudio\SSGVoxPuz\bin\Debug\SSGVoxPuz.pdb
+F:\Projects\unity\AvoxEclipseGit\SSGVoxPuz\VisualStudio\SSGVoxPuz\bin\Debug\SSGCore.dll
+F:\Projects\unity\AvoxEclipseGit\SSGVoxPuz\VisualStudio\SSGVoxPuz\bin\Debug\SSGHud.dll
+F:\Projects\unity\AvoxEclipseGit\SSGVoxPuz\VisualStudio\SSGVoxPuz\bin\Debug\SSGLeap.dll
+F:\Projects\unity\AvoxEclipseGit\SSGVoxPuz\VisualStudio\SSGVoxPuz\bin\Debug\SSGVoxel.dll
+F:\Projects\unity\AvoxEclipseGit\SSGVoxPuz\VisualStudio\SSGVoxPuz\bin\Debug\UnityEngine.dll
+F:\Projects\unity\AvoxEclipseGit\SSGVoxPuz\VisualStudio\SSGVoxPuz\bin\Debug\UnityEngine.UI.dll
+F:\Projects\unity\AvoxEclipseGit\SSGVoxPuz\VisualStudio\SSGVoxPuz\bin\Debug\UnityEngine.xml
+F:\Projects\unity\AvoxEclipseGit\SSGVoxPuz\VisualStudio\SSGVoxPuz\bin\Debug\UnityEngine.UI.xml
+F:\Projects\unity\AvoxEclipseGit\SSGVoxPuz\VisualStudio\SSGVoxPuz\obj\Debug\SSGVoxPuz.csprojResolveAssemblyReference.cache
+F:\Projects\unity\AvoxEclipseGit\SSGVoxPuz\VisualStudio\SSGVoxPuz\obj\Debug\SSGVoxPuz.dll
+F:\Projects\unity\AvoxEclipseGit\SSGVoxPuz\VisualStudio\SSGVoxPuz\obj\Debug\SSGVoxPuz.pdb
+F:\Projects\unity\AvoxEclipseGit\SSGVoxPuz\VisualStudio\SSGVoxPuz\bin\Debug\XInputDotNetPure.dll

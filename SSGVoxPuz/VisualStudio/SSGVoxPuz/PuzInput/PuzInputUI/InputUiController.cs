@@ -22,8 +22,8 @@ namespace SSGVoxPuz.PuzInput.PuzInputUI {
             }
             configMap = new Dictionary<string, InputUiButtonConfig>();
             for (int i = 0; i < configs.Count; i++) {
-                string unityInputName = configs[i].name;
-                configMap[GetConfigKey(unityInputName, configs[i].isPositiveOnly)] = configs[i];
+                string name = configs[i].name;
+                configMap[name] = configs[i];
             }
             groupingConfigMap = new Dictionary<PuzButtonGroupingType, GroupingConfigEntry>();
             for (int i = 0; i < groupingConfigs.Count; i++) {
@@ -37,31 +37,24 @@ namespace SSGVoxPuz.PuzInput.PuzInputUI {
         }
         
         public InputUiIcon GetIcon(PuzButton button) {
-            bool isForPositiveOnly;
-            string unityName = PuzButtonController.GetActiveUnityInputName(button, out isForPositiveOnly);
-            return GetIconForUnityName(unityName, isForPositiveOnly);
+            string aName = PuzButtonController.GetActiveName(button);
+            return GetIconForIdentifier(aName);
         }
 
-        private InputUiIcon GetIconForUnityName(string unityName, bool isForPositiveOnly) {
-            InputUiButtonConfig config = configMap[GetConfigKey(unityName, isForPositiveOnly)];
+        private InputUiIcon GetIconForIdentifier(string aName) {
+            InputUiButtonConfig config = configMap[aName];
             InputUiIcon prefab = iconPrefabMap[config.type];
             GameObject iconObject = Instantiate(prefab.gameObject);
             InputUiIcon icon = iconObject.GetComponent<InputUiIcon>();
             icon.text.text = config.displayText;
-            icon.IsAxis = config.isAxis;
             return icon;
         }
 
         public InputUiIcon GetIcon(string groupingName, PuzButton button) {
-            bool isForPositiveOnly;
-            string unityName = PuzButtonController.GetUnityInputName(button, groupingName, out isForPositiveOnly);
-            return GetIconForUnityName(unityName, isForPositiveOnly);
+            string unityName = PuzButtonController.GetName(button, groupingName);
+            return GetIconForIdentifier(unityName);
         }
-
-        private string GetConfigKey(string unityName, bool isForPositiveOnly) {
-            string suffix = (isForPositiveOnly) ? "POSITIVE" : "NEGATIVE";
-            return unityName + suffix;
-        }
+        
 
         public static void ReturnIcon(InputUiIcon icon) {
             DestroyUtility.DestroyAsNeeded(icon);
@@ -86,15 +79,13 @@ namespace SSGVoxPuz.PuzInput.PuzInputUI {
 
         private string GetDescriptiveText(PuzButton parsed, string tense) {
             string value = string.Empty;
-            bool isForPositive;
-            string unityName =  PuzButtonController.GetActiveUnityInputName(parsed, out isForPositive);
+            string unityName =  PuzButtonController.GetActiveName(parsed);
             if (unityName != null) {
-                string key = GetConfigKey(unityName, isForPositive);
-                if (configMap.ContainsKey(key)) {
-                    InputUiButtonConfig config = configMap[key];
+                if (configMap.ContainsKey(unityName)) {
+                    InputUiButtonConfig config = configMap[unityName];
                     string aAction;
                     if (tense.Equals("present") || tense.Equals("terse")) {
-                        aAction = config.isAxis ? "push" : "click";
+                        aAction = "push";
                     }
                     else if (tense.Equals("holdPresent")) {
                         aAction = "hold down";
@@ -106,7 +97,7 @@ namespace SSGVoxPuz.PuzInput.PuzInputUI {
                         aAction = "holding down";
                     }
                     else {
-                        aAction = config.isAxis ? "pushing" : "clicking";
+                        aAction = "pushing";
                     }
                     bool isTerse = tense.ToUpper().Contains("TERSE");
                     string aName = isTerse ? config.displayText : config.descriptiveText;
@@ -117,6 +108,7 @@ namespace SSGVoxPuz.PuzInput.PuzInputUI {
                     }
                 }
             }
+            Debug.Log(parsed + " " + tense + value);
             return value;
 
         }

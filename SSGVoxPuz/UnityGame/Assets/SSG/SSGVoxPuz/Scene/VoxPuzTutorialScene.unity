@@ -8,25 +8,25 @@ SceneSettings:
   m_PVSPortalsArray: []
   m_OcclusionBakeSettings:
     smallestOccluder: 5
-    smallestHole: .25
+    smallestHole: 0.25
     backfaceThreshold: 100
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 6
   m_Fog: 0
-  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
-  m_FogDensity: .00999999978
+  m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
-  m_AmbientEquatorColor: {r: .114, g: .125, b: .133000001, a: 1}
-  m_AmbientGroundColor: {r: .0469999984, g: .0430000015, b: .0350000001, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 3
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
-  m_HaloStrength: .5
+  m_SkyboxMaterial: {fileID: 2100000, guid: 7b621f3d20f81af4785f8576da7910e2, type: 2}
+  m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -37,13 +37,10 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
---- !u!127 &3
-LevelGameManager:
-  m_ObjectHideFlags: 0
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 5
+  serializedVersion: 6
   m_GIWorkflowMode: 0
   m_LightmapsMode: 1
   m_GISettings:
@@ -68,7 +65,8 @@ LightmapSettings:
     m_TextureCompression: 1
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
-  m_LightmapSnapshot: {fileID: 0}
+    m_ReflectionCompression: 2
+  m_LightingDataAsset: {fileID: 0}
   m_RuntimeCPUUsage: 25
 --- !u!196 &5
 NavMeshSettings:
@@ -76,15 +74,15 @@ NavMeshSettings:
   m_ObjectHideFlags: 0
   m_BuildSettings:
     serializedVersion: 2
-    agentRadius: .5
+    agentRadius: 0.5
     agentHeight: 2
     agentSlope: 45
-    agentClimb: .400000006
+    agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     accuratePlacement: 0
     minRegionArea: 2
-    cellSize: .166666672
+    cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
 --- !u!4 &13838704 stripped
@@ -701,7 +699,7 @@ MonoBehaviour:
   m_Script: {fileID: -823860568, guid: 7d7c522833e760848971ae699b3e961f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textToDisplay: You can zoom in and out by [[Scroll-active]]. That's pretty much
+  textToDisplay: You can zoom in and out by [[ScrollUp-active]]. That's pretty much
     all there is to that...
   textBoxType: 1
   offset: {x: 334, y: 0}
@@ -943,8 +941,8 @@ MonoBehaviour:
   - type: 4
     textBox: {fileID: 11485210, guid: d852c286baf15ab48ab4bfbe7ef9b236, type: 2}
   generalConfig:
-    charsPerSecond: .0199999996
-    newLineWaitTime: .5
+    charsPerSecond: 0.02
+    newLineWaitTime: 0.5
     confirmButton: 0
     audioSource: {fileID: 290421018}
 --- !u!82 &290421018
@@ -958,10 +956,11 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 712d835c4981a489dbbd21c7657b63a3, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .5
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -986,6 +985,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -996,6 +996,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1006,6 +1007,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -1016,6 +1018,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &293546054
 GameObject:
   m_ObjectHideFlags: 0
@@ -2242,7 +2245,7 @@ MonoBehaviour:
   button: 0
   text: Exit
   offset: {x: 339, y: 0}
-  viewPosition: {x: 1.09000003, y: .0299999993, z: 0}
+  viewPosition: {x: 1.09, y: 0.03, z: 0}
   isBusyTillPressed: 1
   shouldListen: 1
 --- !u!1001 &716209787
@@ -2527,7 +2530,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 773946166}
-  m_LocalRotation: {x: -.0370714441, y: -.950616956, z: -.281585276, w: .125151232}
+  m_LocalRotation: {x: -0.037071444, y: -0.95061696, z: -0.28158528, w: 0.12515123}
   m_LocalPosition: {x: 8030, y: -3262, z: 45360}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2901,7 +2904,7 @@ MonoBehaviour:
   button: 0
   text: Click To Try
   offset: {x: 339, y: 0}
-  viewPosition: {x: 1.09000003, y: .0299999993, z: 0}
+  viewPosition: {x: 1.09, y: 0.03, z: 0}
   isBusyTillPressed: 1
   shouldListen: 1
 --- !u!1 &911825185
@@ -3130,7 +3133,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1062263825}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.000539369532, y: -.00212383131, z: .00327041722}
+  m_LocalPosition: {x: -0.00053936953, y: -0.0021238313, z: 0.0032704172}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 290421016}
@@ -3179,7 +3182,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1075625046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.000539369532, y: -.00212383131, z: .00327041722}
+  m_LocalPosition: {x: -0.00053936953, y: -0.0021238313, z: 0.0032704172}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 77640807}
@@ -5226,8 +5229,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1975979733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.0899999961, z: .25}
-  m_LocalScale: {x: .00999999978, y: .00999999978, z: .00999999978}
+  m_LocalPosition: {x: 0, y: -0.089999996, z: 0.25}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children:
   - {fileID: 522271641}
   - {fileID: 773946167}
@@ -5333,7 +5336,7 @@ MonoBehaviour:
   m_Script: {fileID: 1773414569, guid: 7d7c522833e760848971ae699b3e961f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  promptPrefab: {fileID: 11495492, guid: 958354ad556049343b421a015c927977, type: 2}
+  promptPrefab: {fileID: 11494562, guid: f9809ffd265fbff4288579318ea202cd, type: 2}
 --- !u!1001 &2021897755
 Prefab:
   m_ObjectHideFlags: 0
@@ -5437,8 +5440,8 @@ Transform:
   m_PrefabParentObject: {fileID: 477926, guid: aad873e964e141044bdf51e445fdfd25, type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2069983171}
-  m_LocalRotation: {x: -.130526215, y: 0, z: 0, w: .991444886}
-  m_LocalPosition: {x: 0, y: -7.20000029, z: 34.0999947}
+  m_LocalRotation: {x: -0.13052621, y: 0, z: 0, w: 0.9914449}
+  m_LocalPosition: {x: 0, y: -7.2000003, z: 34.099995}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
   - {fileID: 283397041}
@@ -5586,7 +5589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resetState: {fileID: 4900000, guid: 79b47c9d052150947bc264d0904cc31e, type: 3}
   finishedSound: {fileID: 8300000, guid: fde525939a5fa4d1e9968c3ba320c152, type: 3}
-  transitionTime: .66000000000000003
+  transitionTime: 0.66
   progressSound: {fileID: 8300000, guid: 4f82c6f26d9ee4cd69a1a751e55773cc, type: 3}
 --- !u!1 &2118466353
 GameObject:

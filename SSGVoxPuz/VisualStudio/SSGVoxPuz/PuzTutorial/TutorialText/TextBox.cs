@@ -38,6 +38,7 @@ namespace SSGVoxPuz.PuzTutorial.TutorialText {
         protected abstract void CloseExtended();
 
         public void Display(Vector2 offset, bool isCentered) {
+            textField.enabled = true;
             if (isCentered) {
                 textField.alignment = TextAnchor.MiddleCenter;
             }
@@ -70,25 +71,20 @@ namespace SSGVoxPuz.PuzTutorial.TutorialText {
         }
         
         protected void FireFinished() {
-            if (OnFinished != null) {
-                OnFinished(this);
-            }
+            OnFinished?.Invoke(this);
         }
 
         public void Shake() {
-            if (anim != null) {
-                anim.SetTrigger("Shake");
-            }
+            anim?.SetTrigger("Shake");
         }
 
         public void OnEnable() {
+            textField.enabled = false;
             anim = gameObject.GetComponent<Animator>();
         }
         
         public void SetBreathing(bool isBreathing) {
-            if (anim != null) {
-                anim.SetBool("Breathing", isBreathing);    
-            }
+            anim?.SetBool("Breathing", isBreathing);
         }
 
         protected string GetFormattedText() {
@@ -99,13 +95,12 @@ namespace SSGVoxPuz.PuzTutorial.TutorialText {
         
 
         public void WinkClosed() {
-            if (anim != null) {
-                anim.SetTrigger("WinkOut");
-            }
+            anim?.SetTrigger("WinkOut");
         }
 
         public void PopIn() {
             anim.Play(popAnimation);
         }
+        
     }
 }

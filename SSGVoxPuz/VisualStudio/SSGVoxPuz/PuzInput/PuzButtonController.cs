@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using SSGCore.Utility;
 
 namespace SSGVoxPuz.PuzInput {
     public class PuzButtonController {
-
-
-
+        
         private static PuzButtonControllerComp controller;
         
 
@@ -14,22 +11,30 @@ namespace SSGVoxPuz.PuzInput {
             controller = null;
         }
 
-        public static string GetUnityInputName(PuzButton button, string groupingName, out bool isForPositiveOnly) {
+        public static string GetName(PuzButton button, string groupingName) {
             string value = null;
-            isForPositiveOnly = false;
             PuzButtonControllerComp aComp = GetComp();
             if (!CompUtil.IsNull(aComp)) {
-                value = aComp.GetUnityInputName(button, groupingName, out isForPositiveOnly);
+                value = aComp.GetName(button, groupingName);
             }
             return value;
         }
 
-        public static string GetActiveUnityInputName(PuzButton button, out bool isForPositiveOnly) {
+        public static string GetActiveIdentifier(PuzButton button) {
             string value = null;
-            isForPositiveOnly = false;
             PuzButtonControllerComp aComp = GetComp();
             if (!CompUtil.IsNull(aComp)) {
-                value = aComp.GetActiveUnityInputName(button, out isForPositiveOnly);
+                value = aComp.GetActiveIdentifier(button);
+            }
+            return value;
+        }
+
+        public static string GetActiveName(PuzButton button) {
+            string value = null;
+            PuzButtonControllerComp aComp = GetComp();
+            if (!CompUtil.IsNull(aComp))
+            {
+                value = aComp.GetActiveName(button);
             }
             return value;
         }

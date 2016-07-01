@@ -121,7 +121,7 @@ Transform:
   m_GameObject: {fileID: 194910}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .200000003, y: .200000003, z: .200000003}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 488928}
   m_RootOrder: 1
@@ -132,8 +132,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153242}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .721000016, y: -.620000005, z: 0}
-  m_LocalScale: {x: -.150000006, y: .150000006, z: .150000006}
+  m_LocalPosition: {x: 0.721, y: -0.62, z: 0}
+  m_LocalScale: {x: -0.15, y: 0.15, z: 0.15}
   m_Children: []
   m_Father: {fileID: 469860}
   m_RootOrder: 1
@@ -144,7 +144,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 124686}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100, y: 100, z: 100}
+  m_LocalPosition: {x: 68.49447, y: -2.007491, z: -60.23696}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 469860}
@@ -158,7 +158,7 @@ Transform:
   m_GameObject: {fileID: 136320}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 488928}
   - {fileID: 429112}
@@ -207,6 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textField: {fileID: 11449624}
+  attentionAnchor: {fileID: 0}
 --- !u!114 &11449624
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -220,6 +221,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: ef004e9a25130da4b8c966f5e13ecc40, type: 3}
     m_FontSize: 40
@@ -228,11 +235,12 @@ MonoBehaviour:
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 3
+    m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: s;adkfjl;sdakfjls;dkfj;lskadjfl;kasjdflkjshdflkjsadfl;kjasdfl;kjsd;alfkjsl;adkfj;lskadjfl;ksjadfl;kjsadf;lkjsadf;lkjsd;flkjas;ldfkjkl;sdakjf;laksjdfl;kjasdfl;kjasdf;lkjasd;lfjkl;sakdfj
+  m_Text: <b>s;ad</b>kfjl;sdakfjls;dkfj;lskadjfl;kasjdflkjshdflkjsadfl;kjasdfl;kjsd;alfkjsl;adkfj;lskadjfl;ksjadfl;kjsadf;lkjsadf;lkjsd;flkjas;ldfkjkl;sdakjf;laksjdfl;kjasdfl;kjasdf;lkjasd;lfjkl;sakdfjsdfsdfsdf
 --- !u!114 &11465232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -288,14 +296,18 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_AutoUVMaxDistance: .5
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1050955853
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 052c37ccdb5f7b141bec4774b179f55d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
 --- !u!222 &22265664
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -317,8 +329,10 @@ Canvas:
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
   m_SortingLayerID: -1050955853
   m_SortingOrder: 1
+  m_TargetDisplay: 0
 --- !u!224 &22436960
 RectTransform:
   m_ObjectHideFlags: 1
@@ -327,7 +341,7 @@ RectTransform:
   m_GameObject: {fileID: 125516}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .00200000009, y: .00200000009, z: .00200000009}
+  m_LocalScale: {x: 0.002, y: 0.002, z: 0.002}
   m_Children:
   - {fileID: 22437276}
   m_Father: {fileID: 488928}
@@ -336,7 +350,7 @@ RectTransform:
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1100, y: 425}
-  m_Pivot: {x: .5, y: .5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22437276
 RectTransform:
   m_ObjectHideFlags: 1
@@ -353,7 +367,7 @@ RectTransform:
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 5}
   m_SizeDelta: {x: -20, y: -10}
-  m_Pivot: {x: .5, y: .5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

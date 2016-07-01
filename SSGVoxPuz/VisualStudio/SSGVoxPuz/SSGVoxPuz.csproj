@@ -66,9 +66,15 @@
       <HintPath>$(UnityRoot)\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="XInputDotNetPure">
+      <HintPath>..\..\UnityGame\Assets\Plugins\x86\XInputDotNetPure.dll</HintPath>
+    </Reference>
     <!--
     <Reference Include="SSGCore">
       <HintPath>$(SolutionDir)$(PluginsRoot)\SSGCore.dll</HintPath>
+    </Reference> 
+    <Reference Include="XInputPure">
+      <HintPath>$(SolutionDir)$(PluginsRoot)\..\Plugins\x86\XInputDotNetPure.dll</HintPath>
     </Reference> 
     -->
   </ItemGroup>
@@ -166,6 +172,7 @@
     <Compile Include="PuzGlobal\VersionTextComp.cs" />
     <Compile Include="PuzGlobal\VoxelContextLoadTag.cs" />
     <Compile Include="PuzInput\ButtonEntryState.cs" />
+    <Compile Include="PuzInput\MouseWrapper.cs" />
     <Compile Include="PuzInput\PuzButtonDriverType.cs" />
     <Compile Include="PuzInput\PuzButtonEventType.cs" />
     <Compile Include="PuzInput\PuzButtonGroupingController.cs" />
@@ -184,6 +191,8 @@
     <Compile Include="PuzInput\PuzInputUI\InputUiController.cs" />
     <Compile Include="PuzInput\PuzInputUI\InputUIButtonType.cs" />
     <Compile Include="PuzInput\PuzInputUI\InputUIIcon.cs" />
+    <Compile Include="PuzInput\XInputKeyCode.cs" />
+    <Compile Include="PuzInput\XInputWrapper.cs" />
     <Compile Include="PuzMenu\EmptyMenuOption.cs" />
     <Compile Include="PuzMenu\PuzMenuConfig.cs" />
     <Compile Include="PuzMenu\PuzMenuControllerFaceAdapter.cs" />

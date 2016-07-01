@@ -8,25 +8,25 @@ SceneSettings:
   m_PVSPortalsArray: []
   m_OcclusionBakeSettings:
     smallestOccluder: 5
-    smallestHole: .25
+    smallestHole: 0.25
     backfaceThreshold: 100
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 6
   m_Fog: 0
-  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
-  m_FogDensity: .00999999978
+  m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
-  m_AmbientEquatorColor: {r: .114, g: .125, b: .133000001, a: 1}
-  m_AmbientGroundColor: {r: .0469999984, g: .0430000015, b: .0350000001, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 3
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
-  m_HaloStrength: .5
+  m_SkyboxMaterial: {fileID: 2100000, guid: 7b621f3d20f81af4785f8576da7910e2, type: 2}
+  m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -37,13 +37,10 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
---- !u!127 &3
-LevelGameManager:
-  m_ObjectHideFlags: 0
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 5
+  serializedVersion: 6
   m_GIWorkflowMode: 0
   m_LightmapsMode: 1
   m_GISettings:
@@ -68,7 +65,8 @@ LightmapSettings:
     m_TextureCompression: 1
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
-  m_LightmapSnapshot: {fileID: 0}
+    m_ReflectionCompression: 2
+  m_LightingDataAsset: {fileID: 0}
   m_RuntimeCPUUsage: 25
 --- !u!196 &5
 NavMeshSettings:
@@ -76,15 +74,15 @@ NavMeshSettings:
   m_ObjectHideFlags: 0
   m_BuildSettings:
     serializedVersion: 2
-    agentRadius: .5
+    agentRadius: 0.5
     agentHeight: 2
     agentSlope: 45
-    agentClimb: .400000006
+    agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     accuratePlacement: 0
     minRegionArea: 2
-    cellSize: .166666672
+    cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &290421015
@@ -136,12 +134,12 @@ MonoBehaviour:
   - type: 1
     textBox: {fileID: 11499902, guid: d0c3b703f4659cc4e86b2bc36d4f468e, type: 2}
   - type: 2
-    textBox: {fileID: 11482788, guid: bfd3053bbeb260346bdea76345f53267, type: 2}
+    textBox: {fileID: 11494280, guid: b4e3cb0a45590ce45afd07667ca5e0a8, type: 2}
   - type: 4
     textBox: {fileID: 11485210, guid: d852c286baf15ab48ab4bfbe7ef9b236, type: 2}
   generalConfig:
-    charsPerSecond: .0199999996
-    newLineWaitTime: .5
+    charsPerSecond: 0.02
+    newLineWaitTime: 0.5
     confirmButton: 0
     audioSource: {fileID: 290421018}
 --- !u!82 &290421018
@@ -155,10 +153,11 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9ad9ae3171ef34a5791fcc9a218551a6, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: .5
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
+  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -183,6 +182,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 4
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -193,6 +193,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -203,6 +204,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -213,6 +215,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &522271640
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,7 +343,7 @@ MonoBehaviour:
   button: 0
   text: Exit
   offset: {x: 0, y: 0}
-  viewPosition: {x: 0, y: -.569999993, z: 0}
+  viewPosition: {x: 0, y: -0.57, z: 0}
   isBusyTillPressed: 1
   shouldListen: 1
 --- !u!1 &773946166
@@ -419,6 +422,9 @@ MonoBehaviour:
   isBreathing: 1
   isCloseOnEventExit: 0
   isCentered: 1
+  isPopIn: 0
+  fontSize: 40
+  attentionDelay: 15
 --- !u!1001 &807538232
 Prefab:
   m_ObjectHideFlags: 0
@@ -505,9 +511,12 @@ MonoBehaviour:
   textBoxType: 0
   offset: {x: 0, y: 0}
   isBusyForTextWork: 1
-  isBreathing: 1
+  isBreathing: 0
   isCloseOnEventExit: 0
   isCentered: 1
+  isPopIn: 0
+  fontSize: 40
+  attentionDelay: 15
 --- !u!1 &1110126730
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,11 +558,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textToDisplay: CREDITS
   textBoxType: 2
-  offset: {x: 342.790009, y: 0}
+  offset: {x: 342.79, y: 0}
   isBusyForTextWork: 0
   isBreathing: 0
   isCloseOnEventExit: 0
   isCentered: 1
+  isPopIn: 0
+  fontSize: 40
+  attentionDelay: 15
 --- !u!1 &1124773845
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,7 +693,7 @@ MonoBehaviour:
   button: 0
   text: Continue
   offset: {x: 0, y: 0}
-  viewPosition: {x: 0, y: -.569999993, z: 0}
+  viewPosition: {x: 0, y: -0.57, z: 0}
   isBusyTillPressed: 1
   shouldListen: 1
 --- !u!114 &1644821397 stripped
@@ -752,7 +764,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1741348724}
-  m_LocalRotation: {x: 0, y: .164462626, z: 0, w: .986383319}
+  m_LocalRotation: {x: 0, y: 0.16446263, z: 0, w: 0.9863833}
   m_LocalPosition: {x: 6042, y: 0, z: -6633}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -794,8 +806,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1975979733}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.0899999961, z: .25}
-  m_LocalScale: {x: .00999999978, y: .00999999978, z: .00999999978}
+  m_LocalPosition: {x: 0, y: -0.089999996, z: 0.25}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children:
   - {fileID: 522271641}
   - {fileID: 773946167}
@@ -845,4 +857,4 @@ MonoBehaviour:
   m_Script: {fileID: 1773414569, guid: 7d7c522833e760848971ae699b3e961f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  promptPrefab: {fileID: 11495492, guid: 958354ad556049343b421a015c927977, type: 2}
+  promptPrefab: {fileID: 11494562, guid: f9809ffd265fbff4288579318ea202cd, type: 2}

@@ -8,25 +8,25 @@ SceneSettings:
   m_PVSPortalsArray: []
   m_OcclusionBakeSettings:
     smallestOccluder: 5
-    smallestHole: .25
+    smallestHole: 0.25
     backfaceThreshold: 100
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 6
   m_Fog: 0
-  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
-  m_FogDensity: .00999999978
+  m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: .211999997, g: .226999998, b: .259000003, a: 1}
-  m_AmbientEquatorColor: {r: .114, g: .125, b: .133000001, a: 1}
-  m_AmbientGroundColor: {r: .0469999984, g: .0430000015, b: .0350000001, a: 1}
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
-  m_HaloStrength: .5
+  m_SkyboxMaterial: {fileID: 2100000, guid: 7b621f3d20f81af4785f8576da7910e2, type: 2}
+  m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
@@ -37,13 +37,10 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
---- !u!127 &3
-LevelGameManager:
-  m_ObjectHideFlags: 0
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 5
+  serializedVersion: 6
   m_GIWorkflowMode: 0
   m_LightmapsMode: 1
   m_GISettings:
@@ -68,7 +65,8 @@ LightmapSettings:
     m_TextureCompression: 1
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
-  m_LightmapSnapshot: {fileID: 0}
+    m_ReflectionCompression: 2
+  m_LightingDataAsset: {fileID: 0}
   m_RuntimeCPUUsage: 25
 --- !u!196 &5
 NavMeshSettings:
@@ -76,15 +74,15 @@ NavMeshSettings:
   m_ObjectHideFlags: 0
   m_BuildSettings:
     serializedVersion: 2
-    agentRadius: .5
+    agentRadius: 0.5
     agentHeight: 2
     agentSlope: 45
-    agentClimb: .400000006
+    agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     accuratePlacement: 0
     minRegionArea: 2
-    cellSize: .166666672
+    cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &39544851
@@ -376,8 +374,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 748385087}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.0899999961, z: .25}
-  m_LocalScale: {x: .00999999978, y: .00999999978, z: .00999999978}
+  m_LocalPosition: {x: 0, y: -0.089999996, z: 0.25}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children:
   - {fileID: 1536517581}
   - {fileID: 65135604}
@@ -504,7 +502,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1077712839}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.172000006, z: .340999901}
+  m_LocalPosition: {x: 0, y: -0.172, z: 0.3409999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1495800887}
@@ -552,8 +550,8 @@ MonoBehaviour:
   menuConfig:
     isHoverable: 1
     isSelectable: 1
-    backgroundNormal: {r: .905882418, g: .905882418, b: .909803987, a: 1}
-    backgroundHover: {r: .83088237, g: .92302233, b: 1, a: 1}
+    backgroundNormal: {r: 0.9058824, g: 0.9058824, b: 0.909804, a: 1}
+    backgroundHover: {r: 0.8308824, g: 0.92302233, b: 1, a: 1}
     screenTitle: A Vox Eclipse
     selectSound: {fileID: 8300000, guid: 11e796e6b5b0147429cd5d013c789652, type: 3}
     hoverSound: {fileID: 8300000, guid: 09fbe25f6bc504aabb5ad55b842b19c3, type: 3}
@@ -981,7 +979,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1495800886}
-  m_LocalRotation: {x: -.0231224746, y: -.976839483, z: -.154715925, w: .145989805}
+  m_LocalRotation: {x: -0.023122475, y: -0.9768395, z: -0.15471593, w: 0.1459898}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
@@ -1119,7 +1117,7 @@ MonoBehaviour:
   button: 0
   text: Click
   offset: {x: 0, y: 0}
-  viewPosition: {x: -.114, y: -.800000012, z: 0}
+  viewPosition: {x: -0.114, y: -0.8, z: 0}
   isBusyTillPressed: 1
   shouldListen: 0
 --- !u!1 &1610826984
@@ -1165,8 +1163,8 @@ MonoBehaviour:
   menuConfig:
     isHoverable: 1
     isSelectable: 1
-    backgroundNormal: {r: .905882418, g: .905882418, b: .909803987, a: 1}
-    backgroundHover: {r: .83088237, g: .92302233, b: 1, a: 1}
+    backgroundNormal: {r: 0.9058824, g: 0.9058824, b: 0.909804, a: 1}
+    backgroundHover: {r: 0.8308824, g: 0.92302233, b: 1, a: 1}
     screenTitle: A Vox Eclipse
     selectSound: {fileID: 8300000, guid: 11e796e6b5b0147429cd5d013c789652, type: 3}
     hoverSound: {fileID: 8300000, guid: 09fbe25f6bc504aabb5ad55b842b19c3, type: 3}

@@ -10,7 +10,5 @@ namespace SSGVoxPuz.PuzInput.PuzInputUI {
         public string descriptiveText = "the 'A' key";
         public InputUiButtonType type = InputUiButtonType.KeyboardSmall;
         public string displayText = "Key";
-        public bool isAxis;
-        public bool isPositiveOnly;
     }
 }

@@ -58,12 +58,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -84,6 +78,9 @@
     </Reference>
     <Reference Include="LeapCSharp.NET3.5">
       <HintPath>Assets\Plugins\LeapCSharp.NET3.5.dll</HintPath>
+    </Reference>
+    <Reference Include="XInputDotNetPure">
+      <HintPath>Assets\Plugins\x86_64\XInputDotNetPure.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -162,6 +159,7 @@
     <Compile Include="Assets\SSG\SSGLeap\Widgets\Scripts\DataBinderExamples\ToggleToTextDataBinder.cs" />
     <Compile Include="Assets\SSG\SSGLeap\Widgets\Scripts\WidgetsEnabler.cs" />
     <Compile Include="Assets\SSG\SSGVoxPuz\AdapterScripts\HandControllerAdapter.cs" />
+    <Compile Include="Assets\XInputDotNet\Examples\XInputTestCS.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\SSG\SSGLeap\LeapMotion\DemoResources\ScrollerText.txt" />
@@ -183,6 +181,8 @@
     <None Include="Assets\SSG\SSGVoxPuz\Misc\Credits.txt" />
     <None Include="Assets\SSG\SSGVoxPuz\Misc\HintDescription.txt" />
     <None Include="Assets\SSG\SSGVoxPuz\Shaders\Ghost.shader" />
+    <None Include="Assets\Wispy Sky\ReadMe.txt" />
+    <None Include="Assets\XInputDotNet\MITLicense.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

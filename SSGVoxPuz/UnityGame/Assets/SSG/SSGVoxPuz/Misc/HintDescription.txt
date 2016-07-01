@@ -10,7 +10,7 @@ Toggle Move Mode
 <b>[[ScrollClick-holdTerse]]:</b>
 Rotate Model
 
-<b>[[Scroll-terse]]:</b>
+<b>[[ScrollUp-terse]]:</b>
 Zoom In / Out
 
 <b>[[Secondary-holdTerse]]:</b>

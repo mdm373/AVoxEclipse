@@ -48,8 +48,7 @@ namespace SSGVoxPuz.Welcome {
         }
 
         private static bool IsGamepadIncluded() {
-            string[] names = Input.GetJoystickNames();
-            return (from name in names where !string.IsNullOrEmpty(name) select name).Any();
+            return XInputWrapper.IsGamePadPresent();
         }
 
         public override void Unload() {

@@ -45,13 +45,11 @@ namespace SSGVoxPuz.PuzInput {
             }
         }
 
-        public string GetActiveUnityInputName(PuzButton button, out bool isForPositiveOnly) {
+        public string GetActiveIdentifier(PuzButton button) {
             string input = null;
-            isForPositiveOnly = false;
             for (int i = 0; i < entryControllers.Count; i++) {
                 if (entryControllers[i].GetPuzButton() == button) {
-                    input = entryControllers[i].GetUnityInput();
-                    isForPositiveOnly = entryControllers[i].IsForPositiveAxisOnly();
+                    input = entryControllers[i].GetComparisonKey();
                     break;
                 }
             }
@@ -73,5 +71,17 @@ namespace SSGVoxPuz.PuzInput {
             return grouping.name;
         }
 
+        public string GetButtonName(PuzButton button) {
+            string input = null;
+            for (int i = 0; i < entryControllers.Count; i++)
+            {
+                if (entryControllers[i].GetPuzButton() == button)
+                {
+                    input = entryControllers[i].GetName();
+                    break;
+                }
+            }
+            return input;
+        }
     }
 }

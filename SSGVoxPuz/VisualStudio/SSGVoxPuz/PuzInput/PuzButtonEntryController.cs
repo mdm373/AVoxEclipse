@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 namespace SSGVoxPuz.PuzInput {
-    class PuzButtonEntryController {
+    internal class PuzButtonEntryController {
 
         private readonly PuzButtonConfigEntry config;
         private readonly PuzButtonsGeneralConfig generalConfig;
         private readonly ButtonEntryState state;
         private readonly PuzButtonsState generalState;
+        private readonly XInputWrapper xInputWrapper;
+        private readonly MouseWrapper mouseWrapper;
 
         public PuzButtonEntryController(PuzButtonConfigEntry puzButtonConfigEntry, 
                 PuzButtonsGeneralConfig aGeneralConfig, 
@@ -17,10 +20,12 @@ namespace SSGVoxPuz.PuzInput {
             state = new ButtonEntryState();
             generalState = puzButtonsState;
             generalConfig = aGeneralConfig;
+            xInputWrapper = new XInputWrapper(generalConfig.axisTolerance);
+            mouseWrapper = new MouseWrapper();
         }
 
         public bool IsAnythingPressed() {
-            return IsButtonPressedAtAll();
+            return GetButton(config) > 0;
         }
 
         public void EnqueueButtonEvents(Queue<PuzButtonEventData> events) {
@@ -38,7 +43,7 @@ namespace SSGVoxPuz.PuzInput {
             }
             if (state.isButtonPressedThisFrame) {
                 float duration = Time.time - state.lastButtonPressDownTime;
-                if (duration >= generalConfig.shortToLongPressSeconds && !state.wasLongPressFired && !config.isAxis) {
+                if (duration >= generalConfig.shortToLongPressSeconds && !state.wasLongPressFired) {
                     state.wasLongPressFired = true;
                     EnqueueEventForLongPressConfirm(events);    
                 }
@@ -46,7 +51,7 @@ namespace SSGVoxPuz.PuzInput {
             }
             if (state.isPressedUpThisFrame) {
                 float duration = Time.time - state.lastButtonPressDownTime;
-                if (duration < generalConfig.shortToLongPressSeconds && !config.isAxis) {
+                if (duration < generalConfig.shortToLongPressSeconds) {
                     EnqueueEventForShortPressConfirm(events);
                 }
                 EnqueueButtonPressedUp(events);
@@ -54,27 +59,11 @@ namespace SSGVoxPuz.PuzInput {
         }
 
         private void UpdateStateForFrame() {
-            if (config.isUnityInputAxis) {
-                float axisMod = config.isAxisInverted ? -1f : 1f;
-                state.lastFrameUnityAxisValue = state.thisFrameUnityAxisValue;
-                state.thisFrameUnityAxisValue = axisMod * Input.GetAxis(config.unityInputName);
-
-                if (config.unityInputName.Equals("Xbox-Triggers")) {
-                    //Debug.Log(state.thisFrameUnityAxisValue);
-                }
-
-                state.wasButtonPressedLastFrame = state.isButtonPressedThisFrame;
-                if (config.isAxis) {
-                    state.isButtonPressedThisFrame = IsUnityAxisActive(state.thisFrameUnityAxisValue);
-                }
-                else { //Is Button
-                    state.isButtonPressedThisFrame = IsAxisPressedForValue(state.thisFrameUnityAxisValue);
-                }
-            }
-            else {
-                state.wasButtonPressedLastFrame = state.isButtonPressedThisFrame;
-                state.isButtonPressedThisFrame = Input.GetButton(config.unityInputName);
-            }
+           state.wasButtonPressedLastFrame = state.isButtonPressedThisFrame;
+            state.lastFrameValue = state.thisFrameValue;
+            state.thisFrameValue = GetButton(config);
+            state.isButtonPressedThisFrame = state.thisFrameValue > 0;
+           
             
             if (!state.wasButtonPressedLastFrame && state.isButtonPressedThisFrame) {
                 state.lastButtonPressDownTime = Time.time;
@@ -95,26 +84,22 @@ namespace SSGVoxPuz.PuzInput {
 
         }
 
-
-        private bool IsButtonPressedAtAll() {
-            bool isPressedAtAll;
-            if (config.isUnityInputAxis) {
-                float axisValue = Input.GetAxis(config.unityInputName);
-                isPressedAtAll = config.isAxis ? IsUnityAxisActive(axisValue) : IsAxisPressedForValue(axisValue);
+        private float GetButton(PuzButtonConfigEntry puzButtonConfigEntry) {
+            float value;
+            switch (puzButtonConfigEntry.keyType) {
+                case KeyType.Keyboard:
+                    value = Input.GetKey(config.keyCode) ? 1 : 0;
+                    break;
+                case KeyType.Mouse:
+                    value = mouseWrapper.GetButton(config.mouseButton);
+                    break;
+                case KeyType.XInput:
+                    value = xInputWrapper.GetButton(config.xInputKeyCode);
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException();
             }
-            else {
-                isPressedAtAll = Input.GetButton(config.unityInputName);
-            }
-            return isPressedAtAll;
-        }
-
-        private bool IsUnityAxisActive(float axisValue) {
-            return Mathf.Abs(axisValue) >= generalConfig.axisTolerance;
-        }
-
-        private bool IsAxisPressedForValue(float axisValue) {
-            bool isIdle = Mathf.Abs(axisValue) < generalConfig.axisTolerance;
-            return !isIdle && (config.isForPositiveUnityAxis) ? axisValue > 0 : axisValue < 0;
+            return value;
         }
 
         private void EnqueueButtonPressedUp(Queue<PuzButtonEventData> events) {
@@ -122,67 +107,54 @@ namespace SSGVoxPuz.PuzInput {
                 button = config.button,
                 driverType = PuzButtonDriverType.Up,
                 eventType = PuzButtonEventType.PressConfirmed,
-                axisDirection = state.thisFrameUnityAxisValue
+                value = state.thisFrameValue
             };
             events.Enqueue(anEvent);
         }
 
         private void EnqueueButtonPressedContinue(Queue<PuzButtonEventData> events) {
             PuzButtonEventData anEvent = new PuzButtonEventData {
-                button = config.button,
-                driverType = PuzButtonDriverType.Continue,
-                eventType = PuzButtonEventType.PressConfirmed,
-                axisDirection = state.thisFrameUnityAxisValue
+                button = config.button, driverType = PuzButtonDriverType.Continue, eventType = PuzButtonEventType.PressConfirmed, value = state.thisFrameValue
             };
             events.Enqueue(anEvent);
         }
 
         private void EnqueueButtonPressDown(Queue<PuzButtonEventData> events) {
             PuzButtonEventData anEvent = new PuzButtonEventData {
-                button = config.button,
-                driverType = PuzButtonDriverType.Down,
-                eventType = PuzButtonEventType.PressConfirmed,
-                axisDirection = state.thisFrameUnityAxisValue
+                button = config.button, driverType = PuzButtonDriverType.Down, eventType = PuzButtonEventType.PressConfirmed,
+                value = state.thisFrameValue
             };
             events.Enqueue(anEvent);
         }
 
         private void EnqueueEventForShortPressConfirm(Queue<PuzButtonEventData> events) {
             PuzButtonEventData anEvent = new PuzButtonEventData {
-                button = config.button,
-                driverType = PuzButtonDriverType.ShortPress,
-                eventType = PuzButtonEventType.PressConfirmed,
-                axisDirection = state.thisFrameUnityAxisValue
+                button = config.button, driverType = PuzButtonDriverType.ShortPress, eventType = PuzButtonEventType.PressConfirmed,
+                value = state.thisFrameValue
             };
             events.Enqueue(anEvent);
         }
 
         private void EnqueueEventForShortPressStart(Queue<PuzButtonEventData> events) {
             PuzButtonEventData anEvent = new PuzButtonEventData {
-                button = config.button,
-                driverType = PuzButtonDriverType.ShortPress,
-                eventType = PuzButtonEventType.PressPossibleStart,
-                axisDirection = state.thisFrameUnityAxisValue
+                button = config.button, driverType = PuzButtonDriverType.ShortPress, eventType = PuzButtonEventType.PressPossibleStart,
+                value = state.thisFrameValue
             };
             events.Enqueue(anEvent);
         }
-        
+
         private void EnqueueEventForLongPressStart(Queue<PuzButtonEventData> events) {
             PuzButtonEventData anEvent = new PuzButtonEventData {
-                button = config.button,
-                driverType = PuzButtonDriverType.LongPress,
-                eventType = PuzButtonEventType.PressPossibleStart,
-                axisDirection = state.thisFrameUnityAxisValue
+                button = config.button, driverType = PuzButtonDriverType.LongPress, eventType = PuzButtonEventType.PressPossibleStart,
+                value = state.thisFrameValue
             };
             events.Enqueue(anEvent);
         }
 
         private void EnqueueEventForLongPressConfirm(Queue<PuzButtonEventData> events) {
             PuzButtonEventData anEvent = new PuzButtonEventData {
-                button = config.button,
-                driverType = PuzButtonDriverType.LongPress,
-                eventType = PuzButtonEventType.PressConfirmed,
-                axisDirection = state.thisFrameUnityAxisValue
+                button = config.button, driverType = PuzButtonDriverType.LongPress, eventType = PuzButtonEventType.PressConfirmed,
+                value = state.thisFrameValue
             };
             events.Enqueue(anEvent);
         }
@@ -195,16 +167,12 @@ namespace SSGVoxPuz.PuzInput {
             return config.button;
         }
 
-        public string GetUnityInput() {
-            return config.unityInputName;
-        }
-
-        public bool IsForPositiveAxisOnly() {
-            return config.isForPositiveUnityAxis;
-        }
-
         public string GetComparisonKey() {
-            return GetUnityInput() + IsForPositiveAxisOnly();
+            return config.GetComparisonKey();
+        }
+
+        public string GetName() {
+            return config.name;
         }
     }
 }

@@ -9,7 +9,8 @@ using UnityEngine;
 namespace SSGVoxPuz.PuzZoom {
     public class PuzZoomControllerComp : SceneSingletonQuickLoadItem<PuzZoomControllerComp>, PuzInteractable, CustomUpdater, ZoomFace {
 
-        public PuzButton zoomButton;
+        public PuzButton zoomInButton;
+        public PuzButton zoomOutButton;
         public Transform toZoom;
         public Transform toLook;
         public Transform zoomRoot;
@@ -34,8 +35,10 @@ namespace SSGVoxPuz.PuzZoom {
             globalController = InteractionGlobalControllerComp.GetSceneLoadInstance();
             globalController.AddController(this);
             SceneCustomDelegator.AddUpdater(this);
-            PuzButtonController.AddListener(zoomButton, PuzButtonDriverType.Continue, HandleZoomContinue);
-            PuzButtonController.AddListener(zoomButton, PuzButtonDriverType.Up, HandleZoomStop);
+            PuzButtonController.AddListener(zoomInButton, PuzButtonDriverType.Continue, HandleZoomInContinue);
+            PuzButtonController.AddListener(zoomOutButton, PuzButtonDriverType.Continue, HandleZoomOutContinue);
+            PuzButtonController.AddListener(zoomInButton, PuzButtonDriverType.Up, HandleZoomStop);
+            PuzButtonController.AddListener(zoomOutButton, PuzButtonDriverType.Up, HandleZoomStop);
             stateManager = new PuzInteractableStateManager(interactionStateConfig, this);
             stateManager.Load();
             ResetZoomLevel();
@@ -43,8 +46,10 @@ namespace SSGVoxPuz.PuzZoom {
         }
 
         public override void Unload() {
-            PuzButtonController.RemoveListener(zoomButton, PuzButtonDriverType.Continue , HandleZoomContinue);
-            PuzButtonController.RemoveListener(zoomButton, PuzButtonDriverType.Up, HandleZoomStop);
+            PuzButtonController.RemoveListener(zoomInButton, PuzButtonDriverType.Continue , HandleZoomInContinue);
+            PuzButtonController.RemoveListener(zoomOutButton, PuzButtonDriverType.Continue, HandleZoomOutContinue);
+            PuzButtonController.RemoveListener(zoomInButton, PuzButtonDriverType.Up, HandleZoomStop);
+            PuzButtonController.RemoveListener(zoomOutButton, PuzButtonDriverType.Up, HandleZoomStop);
             stateManager.Unload();
         }
 
@@ -53,8 +58,10 @@ namespace SSGVoxPuz.PuzZoom {
         }
 
         public void OnDestroy() {
-            PuzButtonController.RemoveListener(zoomButton, PuzButtonDriverType.Continue, HandleZoomContinue);
-            PuzButtonController.RemoveListener(zoomButton, PuzButtonDriverType.Up, HandleZoomStop);
+            PuzButtonController.RemoveListener(zoomInButton, PuzButtonDriverType.Continue, HandleZoomInContinue);
+            PuzButtonController.RemoveListener(zoomOutButton, PuzButtonDriverType.Continue, HandleZoomOutContinue);
+            PuzButtonController.RemoveListener(zoomInButton, PuzButtonDriverType.Up, HandleZoomStop);
+            PuzButtonController.RemoveListener(zoomOutButton, PuzButtonDriverType.Up, HandleZoomStop);
             stateManager.Unload();
         }
 
@@ -66,11 +73,20 @@ namespace SSGVoxPuz.PuzZoom {
             }
         }
 
-        private void HandleZoomContinue(PuzButtonEventData eventData) {
+        private void HandleZoomInContinue(PuzButtonEventData eventData) {
+            HandleZoomContinue(eventData, -1.0f);
+        }
+
+        private void HandleZoomOutContinue(PuzButtonEventData eventData)
+        {
+            HandleZoomContinue(eventData, 1.0f);
+        }
+
+        private void HandleZoomContinue(PuzButtonEventData eventData, float sign) {
             if (IsInteractionEnabled && isZoomEnabled) {
                 globalController.HaultOthers(this);
                 globalController.DisableOthers(this);
-                zoomRequest = eventData.axisDirection;
+                zoomRequest = eventData.value * sign;
                 zoomRequest = Mathf.Sign(zoomRequest);
             }
         }

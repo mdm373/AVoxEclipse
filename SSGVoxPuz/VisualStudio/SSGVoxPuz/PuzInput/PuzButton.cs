@@ -1,5 +1,5 @@
 ﻿namespace SSGVoxPuz.PuzInput {
     public enum PuzButton {
-        Primary, Secondary, Scroll, ScrollClick, Exit, CameraReset
+        Primary, Secondary, ScrollUp, ScrollClick, Exit, CameraReset, ScrollDown
     }
 }

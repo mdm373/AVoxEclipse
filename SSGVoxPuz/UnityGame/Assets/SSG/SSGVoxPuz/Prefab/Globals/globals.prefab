@@ -475,7 +475,7 @@ AudioSource:
     type: 2}
   m_audioClip: {fileID: 8300000, guid: f745de6b422ea654eaa3a60f21647ec0, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.084
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -515,7 +515,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -526,7 +526,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -537,7 +537,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!114 &11401696
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -583,174 +583,146 @@ MonoBehaviour:
   - {fileID: 11473400, guid: 0b34f836c6beb9b4aa79ad1c97d3d638, type: 2}
   - {fileID: 11450272, guid: 237f78e5e5c6ddc41a5f55e1b2b5aeaf, type: 2}
   configs:
-  - name: MouseButton-Left
+  - name: Left Mouse Button
     descriptiveText: left mouse button
     type: 0
     displayText: LMB
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: MouseButton-Right
+  - name: Right Mouse Button
     descriptiveText: right mouse button
     type: 2
     displayText: RMB
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: MouseButton-ScrollWheelClick
+  - name: Mouse Scroll-Wheel Click
     descriptiveText: mouse scroll wheel
     type: 1
     displayText: SCR
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Mouse ScrollWheel
+  - name: Mouse Scroll-Wheel Up
     descriptiveText: mouse scroll wheel
     type: 1
     displayText: SCR
-    isAxis: 1
-    isPositiveOnly: 0
-  - name: Xbox-RightStickVertical
+  - name: Mouse Scroll-Wheel Down
+    descriptiveText: mouse scroll wheel
+    type: 1
+    displayText: SCR
+  - name: Right Stick Up
     descriptiveText: right stick
     type: 12
     displayText: RS
-    isAxis: 1
-    isPositiveOnly: 0
-  - name: Xbox-A
+  - name: Right Stick Down
+    descriptiveText: right stick
+    type: 12
+    displayText: RS
+  - name: A Button
     descriptiveText: '''A'' button'
     type: 3
     displayText: A
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Xbox-RightBumper
+  - name: Right Bumper
     descriptiveText: right bumper
     type: 9
     displayText: RB
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Xbox-Triggers
+  - name: Right Trigger
     descriptiveText: right trigger
     type: 11
     displayText: RT
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Xbox-Triggers
+  - name: Left Trigger
     descriptiveText: left trigger
     type: 10
     displayText: LT
-    isAxis: 0
-    isPositiveOnly: 1
-  - name: Xbox-LeftStickVertical
+  - name: Left Stick Up
     descriptiveText: left stick
     type: 12
     displayText: LS
-    isAxis: 1
-    isPositiveOnly: 0
-  - name: Xbox-LeftBumper
+  - name: Left Stick Down
+    descriptiveText: left stick
+    type: 12
+    displayText: LS
+  - name: Left Bumper
     descriptiveText: left bumper
     type: 8
     displayText: LB
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Xbox-LeftStickClick
+  - name: Left Stick Click
     descriptiveText: left stick
     type: 12
     displayText: LS
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Keyboard-UpDownArrows
+  - name: Up Arrow
     descriptiveText: up and down arrows
     type: 15
     displayText: Up/Down
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Keyboard-RightArrow
+  - name: Down Arrow
+    descriptiveText: up and down arrows
+    type: 15
+    displayText: Up/Down
+  - name: Right Arrow
     descriptiveText: right arrow
     type: 14
     displayText: Right
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Keyboard-RightCtrl
+  - name: Right Ctrl Key
     descriptiveText: right control key
     type: 15
     displayText: Right Ctrl
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Keyboard-WS
+  - name: W Key
     descriptiveText: '''W'' and ''S'' keys'
     type: 15
     displayText: W / S
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Keyboard-Q
+  - name: S Key
+    descriptiveText: '''W'' and ''S'' keys'
+    type: 15
+    displayText: W / S
+  - name: Q Key
     descriptiveText: '''Q'' key'
     type: 14
     displayText: Q
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Keyboard-E
+  - name: E Key
     descriptiveText: '''E'' key'
     type: 14
     displayText: E
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Keyboard-A
+  - name: A Key
     descriptiveText: '''A'' key'
     type: 14
     displayText: A
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Keyboard-Esc
+  - name: Escape Key
     descriptiveText: escape key
     type: 15
     displayText: esc
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Xbox-Start
+  - name: Start Button
     descriptiveText: start button
     type: 13
     displayText: 
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Keyboard-LeftArrow
+  - name: Left Arrow
     descriptiveText: left arrow
     type: 17
     displayText: Left
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Keyboard-F10
+  - name: F10 Key
     descriptiveText: '''F10'' key'
     type: 14
     displayText: F10
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Keyboard-D
+  - name: Home Key
+    descriptiveText: '''Home'' key'
+    type: 15
+    displayText: Home
+  - name: D Key
     descriptiveText: '''D'' key'
     type: 14
     displayText: D
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Keyboard-Space
+  - name: Spacebar
     descriptiveText: spacebar
     type: 15
     displayText: Space
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Keyboard-LeftAlt
+  - name: Left Alt Key
     descriptiveText: left alt key
     type: 15
     displayText: Left Alt
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Keyboard-LeftCtrl
+  - name: Left Ctrl Key
     descriptiveText: left control key
     type: 15
     displayText: Left Ctrl
-    isAxis: 0
-    isPositiveOnly: 0
-  - name: Keyboard-ZX
+  - name: Z Key
     descriptiveText: '''Z'' and ''X'' keys'
     type: 15
     displayText: Z / X
-    isAxis: 0
-    isPositiveOnly: 0
+  - name: X Key
+    descriptiveText: '''Z'' and ''X'' keys'
+    type: 15
+    displayText: Z / X
   groupingConfigs:
   - grouping: 5
     displayName: Right Hand On Gamepad
@@ -887,322 +859,328 @@ MonoBehaviour:
       entries:
       - name: Left Mouse Button
         button: 0
-        unityInputName: MouseButton-Left
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
+        keyType: 1
+        keyCode: 0
+        mouseButton: 0
+        xInputKeyCode: 0
       - name: Right Mouse Button
         button: 1
-        unityInputName: MouseButton-Right
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 0
-        isAxisInverted: 0
-      - name: Mouse Scroll-Wheel
+        keyType: 1
+        keyCode: 0
+        mouseButton: 4
+        xInputKeyCode: 0
+      - name: Mouse Scroll-Wheel Up
         button: 2
-        unityInputName: Mouse ScrollWheel
-        isAxis: 1
-        isUnityInputAxis: 1
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 0
-        isAxisInverted: 1
+        keyType: 1
+        keyCode: 0
+        mouseButton: 1
+        xInputKeyCode: 0
+      - name: Mouse Scroll-Wheel Down
+        button: 6
+        isAlwaysListenedTo: 0
+        keyType: 1
+        keyCode: 0
+        mouseButton: 2
+        xInputKeyCode: 0
       - name: Mouse Scroll-Wheel Click
         button: 3
-        unityInputName: MouseButton-ScrollWheelClick
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 0
-        isAxisInverted: 0
+        keyType: 1
+        keyCode: 0
+        mouseButton: 3
+        xInputKeyCode: 0
       - name: Escape Key
         button: 4
-        unityInputName: Keyboard-Esc
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
-      - name: Reset Focus
+        keyType: 0
+        keyCode: 27
+        mouseButton: 0
+        xInputKeyCode: 0
+      - name: Home Key
         button: 5
-        unityInputName: Keyboard-F10
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
+        keyType: 0
+        keyCode: 278
+        mouseButton: 0
+        xInputKeyCode: 0
       orderIndex: 0
     - name: Controller In Right Hand
       isGamePadIncluded: 1
       handedness: 0
       groupingType: 5
       entries:
-      - name: Right Stick Up/Down
+      - name: Right Stick Up
         button: 2
-        unityInputName: Xbox-RightStickVertical
-        isAxis: 1
-        isUnityInputAxis: 1
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 0
-        isAxisInverted: 0
+        keyType: 2
+        keyCode: 0
+        mouseButton: 0
+        xInputKeyCode: 10
+      - name: Right Stick Down
+        button: 6
+        isAlwaysListenedTo: 0
+        keyType: 2
+        keyCode: 0
+        mouseButton: 0
+        xInputKeyCode: 11
       - name: A Button
         button: 1
-        unityInputName: Xbox-A
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 0
-        isAxisInverted: 0
+        keyType: 2
+        keyCode: 0
+        mouseButton: 0
+        xInputKeyCode: 14
       - name: Right Bumper
         button: 3
-        unityInputName: Xbox-RightBumper
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 0
-        isAxisInverted: 0
+        keyType: 2
+        keyCode: 0
+        mouseButton: 0
+        xInputKeyCode: 3
       - name: Right Trigger
         button: 0
-        unityInputName: Xbox-Triggers
-        isAxis: 0
-        isUnityInputAxis: 1
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
+        keyType: 2
+        keyCode: 0
+        mouseButton: 0
+        xInputKeyCode: 1
       - name: Start button
         button: 4
-        unityInputName: Xbox-Start
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
-      - name: Reset Focus
+        keyType: 2
+        keyCode: 0
+        mouseButton: 0
+        xInputKeyCode: 18
+      - name: Home Key
         button: 5
-        unityInputName: Keyboard-F10
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
+        keyType: 0
+        keyCode: 278
+        mouseButton: 0
+        xInputKeyCode: 0
       orderIndex: 10
     - name: Controller In Left Hand
       isGamePadIncluded: 1
       handedness: 1
       groupingType: 4
       entries:
-      - name: Left Stick Up / Down
+      - name: Left Stick Up
         button: 2
-        unityInputName: Xbox-LeftStickVertical
-        isAxis: 1
-        isUnityInputAxis: 1
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 0
-        isAxisInverted: 0
+        keyType: 2
+        keyCode: 0
+        mouseButton: 0
+        xInputKeyCode: 8
+      - name: Left Stick Down
+        button: 6
+        isAlwaysListenedTo: 0
+        keyType: 2
+        keyCode: 0
+        mouseButton: 0
+        xInputKeyCode: 9
       - name: Left Stick Click
         button: 1
-        unityInputName: Xbox-LeftStickClick
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 0
-        isAxisInverted: 0
+        keyType: 2
+        keyCode: 0
+        mouseButton: 0
+        xInputKeyCode: 4
       - name: Left Bumper
         button: 3
-        unityInputName: Xbox-LeftBumper
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 0
-        isAxisInverted: 0
+        keyType: 2
+        keyCode: 0
+        mouseButton: 0
+        xInputKeyCode: 2
       - name: Left Trigger
         button: 0
-        unityInputName: Xbox-Triggers
-        isAxis: 0
-        isUnityInputAxis: 1
-        isForPositiveUnityAxis: 1
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
+        keyType: 2
+        keyCode: 0
+        mouseButton: 0
+        xInputKeyCode: 0
       - name: Start Button
         button: 4
-        unityInputName: Xbox-Start
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
-      - name: Reset Focus
+        keyType: 2
+        keyCode: 0
+        mouseButton: 0
+        xInputKeyCode: 18
+      - name: Home Key
         button: 5
-        unityInputName: Keyboard-F10
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
+        keyType: 0
+        keyCode: 278
+        mouseButton: 0
+        xInputKeyCode: 0
       orderIndex: 10
     - name: Right Hand On Keyboard
       isGamePadIncluded: 0
       handedness: 0
       groupingType: 2
       entries:
-      - name: Up / Down Arrows
+      - name: Up Arrow
         button: 2
-        unityInputName: Keyboard-UpDownArrows
-        isAxis: 1
-        isUnityInputAxis: 1
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 0
-        isAxisInverted: 0
-      - name: Right Control Key
+        keyType: 0
+        keyCode: 273
+        mouseButton: 0
+        xInputKeyCode: 0
+      - name: Down Arrow
+        button: 6
+        isAlwaysListenedTo: 0
+        keyType: 0
+        keyCode: 274
+        mouseButton: 0
+        xInputKeyCode: 0
+      - name: Right Ctrl Key
         button: 1
-        unityInputName: Keyboard-RightCtrl
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 0
-        isAxisInverted: 0
+        keyType: 0
+        keyCode: 305
+        mouseButton: 0
+        xInputKeyCode: 0
       - name: Right Arrow
         button: 3
-        unityInputName: Keyboard-RightArrow
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 0
-        isAxisInverted: 0
+        keyType: 0
+        keyCode: 275
+        mouseButton: 0
+        xInputKeyCode: 0
       - name: Left Arrow
         button: 0
-        unityInputName: Keyboard-LeftArrow
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
+        keyType: 0
+        keyCode: 276
+        mouseButton: 0
+        xInputKeyCode: 0
       - name: Escape Key
         button: 4
-        unityInputName: Keyboard-Esc
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
-      - name: Reset Focus
+        keyType: 0
+        keyCode: 27
+        mouseButton: 0
+        xInputKeyCode: 0
+      - name: Home Key
         button: 5
-        unityInputName: Keyboard-F10
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 0
-        isAxisInverted: 1
+        keyType: 0
+        keyCode: 278
+        mouseButton: 0
+        xInputKeyCode: 0
       orderIndex: 5
     - name: Left Hand On Keyboard
       isGamePadIncluded: 0
       handedness: 1
       groupingType: 3
       entries:
-      - name: W / S Keys
+      - name: W Key
         button: 2
-        unityInputName: Keyboard-WS
-        isAxis: 1
-        isUnityInputAxis: 1
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 0
-        isAxisInverted: 1
+        keyType: 0
+        keyCode: 119
+        mouseButton: 0
+        xInputKeyCode: 0
+      - name: S Key
+        button: 6
+        isAlwaysListenedTo: 0
+        keyType: 0
+        keyCode: 115
+        mouseButton: 0
+        xInputKeyCode: 0
       - name: A Key
         button: 0
-        unityInputName: Keyboard-A
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
+        keyType: 0
+        keyCode: 97
+        mouseButton: 0
+        xInputKeyCode: 0
       - name: E Key
         button: 1
-        unityInputName: Keyboard-E
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 0
-        isAxisInverted: 0
+        keyType: 0
+        keyCode: 101
+        mouseButton: 0
+        xInputKeyCode: 0
       - name: D Key
         button: 3
-        unityInputName: Keyboard-D
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
+        keyType: 0
+        keyCode: 100
+        mouseButton: 0
+        xInputKeyCode: 0
       - name: Escape Key
         button: 4
-        unityInputName: Keyboard-Esc
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
-      - name: Reset Focus
+        keyType: 0
+        keyCode: 27
+        mouseButton: 0
+        xInputKeyCode: 0
+      - name: Home Key
         button: 5
-        unityInputName: Keyboard-F10
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
+        keyType: 0
+        keyCode: 278
+        mouseButton: 0
+        xInputKeyCode: 0
       orderIndex: 0
     - name: Left Hand On Lower Keyboard
       isGamePadIncluded: 0
       handedness: 1
       groupingType: 6
       entries:
-      - name: Z / X Keys
+      - name: Z Key
         button: 2
-        unityInputName: Keyboard-ZX
-        isAxis: 1
-        isUnityInputAxis: 1
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 0
-        isAxisInverted: 1
+        keyType: 0
+        keyCode: 122
+        mouseButton: 0
+        xInputKeyCode: 0
+      - name: X Key
+        button: 6
+        isAlwaysListenedTo: 0
+        keyType: 0
+        keyCode: 120
+        mouseButton: 0
+        xInputKeyCode: 0
       - name: Spacebar
         button: 0
-        unityInputName: Keyboard-Space
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
+        keyType: 0
+        keyCode: 32
+        mouseButton: 0
+        xInputKeyCode: 0
       - name: Left Alt Key
         button: 1
-        unityInputName: Keyboard-LeftAlt
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 0
-        isAxisInverted: 0
+        keyType: 0
+        keyCode: 308
+        mouseButton: 0
+        xInputKeyCode: 0
       - name: Left Ctrl Key
         button: 3
-        unityInputName: Keyboard-LeftCtrl
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
+        keyType: 0
+        keyCode: 306
+        mouseButton: 0
+        xInputKeyCode: 0
       - name: Escape Key
         button: 4
-        unityInputName: Keyboard-Esc
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
-      - name: Reset Focus
+        keyType: 0
+        keyCode: 27
+        mouseButton: 0
+        xInputKeyCode: 0
+      - name: Home Key
         button: 5
-        unityInputName: Keyboard-F10
-        isAxis: 0
-        isUnityInputAxis: 0
-        isForPositiveUnityAxis: 0
         isAlwaysListenedTo: 1
-        isAxisInverted: 0
+        keyType: 0
+        keyCode: 278
+        mouseButton: 0
+        xInputKeyCode: 0
       orderIndex: 5
     generalConfig:
       axisTolerance: 0.001

@@ -1,7 +1,7 @@
 ﻿namespace SSGVoxPuz.PuzInput {
     class ButtonEntryState {
-        public float lastFrameUnityAxisValue;
-        public float thisFrameUnityAxisValue;
+        public float lastFrameValue;
+        public float thisFrameValue;
         public bool isButtonPressedThisFrame;
         public bool wasButtonPressedLastFrame;
         public float lastButtonPressDownTime;
@@ -13,8 +13,8 @@
         public void PutToSleep() {
             isButtonPressedThisFrame = false;
             wasButtonPressedLastFrame = false;
-            lastFrameUnityAxisValue = 0.0f;
-            thisFrameUnityAxisValue = 0.0f;
+            lastFrameValue = 0.0f;
+            thisFrameValue = 0.0f;
             lastButtonPressUpTime = float.MinValue;
             lastButtonPressDownTime = float.MinValue;
             isPressedUpThisFrame = false;

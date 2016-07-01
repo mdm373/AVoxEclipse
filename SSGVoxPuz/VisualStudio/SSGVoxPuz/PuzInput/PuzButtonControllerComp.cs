@@ -81,8 +81,7 @@ namespace SSGVoxPuz.PuzInput {
             }
         }
 
-        public string GetUnityInputName(PuzButton button, string groupingName, out bool isForPositiveOnly) {
-            isForPositiveOnly = false;
+        public string GetName(PuzButton button, string groupingName) {
             string value = null;
             for (int i = 0; i < config.groupings.Count; i++) {
                 PuzButtonGrouping grouping = config.groupings[i];
@@ -90,8 +89,7 @@ namespace SSGVoxPuz.PuzInput {
                     for (int entryIndex = 0; entryIndex < grouping.entries.Count; entryIndex++) {
                         PuzButtonConfigEntry entry = grouping.entries[entryIndex];
                         if (entry.button == button) {
-                            value = entry.unityInputName;
-                            isForPositiveOnly = entry.isForPositiveUnityAxis;
+                            value = entry.name;
                             break;
                         }
                     }
@@ -101,8 +99,12 @@ namespace SSGVoxPuz.PuzInput {
             return value;
         }
 
-        public string GetActiveUnityInputName(PuzButton button, out bool isForPositiveAxisOnly) {
-            return activeGroupingController.GetActiveUnityInputName(button, out isForPositiveAxisOnly);
+        public string GetActiveIdentifier(PuzButton button) {
+            return activeGroupingController.GetActiveIdentifier(button);
+        }
+
+        public string GetActiveName(PuzButton button) {
+            return activeGroupingController.GetButtonName(button);
         }
 
         public override void Load() {
@@ -159,7 +161,7 @@ namespace SSGVoxPuz.PuzInput {
                             }
                             activeGroupingController = groupingControllers[i];
                             activeGroupingIndex = i;
-                            Debug.Log("Active Groupding Changed '" + activeGroupingController.GetName() + '\'');
+                            Debug.Log("Active Input Grouping Changed To '" + activeGroupingController.GetName() + "' due to Trigger '" + awokenKey +'\'');
                         }
                         break;
                     }
